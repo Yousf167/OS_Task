@@ -1,0 +1,22 @@
+
+|-----------------------------------------------------------------|
+|----------PLEASE READ THIS DOCUMENT BEFORE USING THE SYSTEM------|
+|-----------------------------------------------------------------|
+
+	1. Only admins are able to access the /admin directory 
+	2. Only admins and doctors can access the /patients directory
+	3. Receptionists are to documents each check-in
+	4. Doctors should archive old patient files on a 3-month basis
+	5. patient history can be viewed by all users
+	6. Aliases can be assigned to frequently-used
+
+
+
+
+|--------------------------|
+|--------HOW TO USE--------|
+|--------------------------|
+
+	 For Doctors:
+	--------------
+		- 

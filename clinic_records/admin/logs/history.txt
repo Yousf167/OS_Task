@@ -1,0 +1,500 @@
+  134  pwd
+  135  cd Downloads/
+  136  ls
+  137  cd ..
+  138  cd Documents/
+  139  ls
+  140  cd Coding
+  141  ls
+  142  mkdir marwanCode && cd marwanCode
+  143  code ./
+  144  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 100 / 100))); xprop -id $W -format _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0;  done'
+  145  exit
+  146  pip install tkinter
+  147  sudo apt install pipx
+  148  pipx --version
+  149  pipx install tkintre
+  150  pipx install tkinter
+  151  pipx install python-tk
+  152  pipx install tk
+  153  pip install tk
+  154  apt install python3-tk
+  155  sudo apt install python3-tk
+  156  sudo apt autoremove
+  157  sudo apt install python3-matplotlib
+  158  code --version
+  159  sudo apt update && sudo apt install code
+  160  /bin/python3 /home/youssefmohammed/Documents/Coding/marwanCode/project.py
+  161  /bin/python3 /home/youssefmohammed/Documents/Coding/marwanCode/project.py
+  162  /bin/python3 /home/youssefmohammed/Documents/Coding/marwanCode/project.py
+  163  python -u "/home/youssefmohammed/Documents/Coding/marwanCode/project.py"
+  164  python3 --version
+  165  python3 project.py
+  166  sudo apt install tkinter
+  167  pip install tkinter
+  168  sudo apt install python3-pip
+  169  pip install tkinter
+  170  sudo snap refresh code
+  171  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 100 / 100))); xprop -id $W -format _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0;  done'
+  172  exit
+  173  sudo apt install plasma-oa
+  174  sudo apt install plasma-pa
+  175  pactl info
+  176  systemctl --user enable --now pipewire pipewire-pulse
+  177  reboot
+  178  python3 project.py
+  179  man sadf
+  180  sadf
+  181  sudo apt install kvantum
+  182  sudo apt install kvantum
+  183  sudo apt update
+  184  sudo apt install kvantum
+  185  sudo apt search kvantum
+  186  apt policy kvantum
+  187  apt search kvantum
+  188  apt search breeze | grep -i "plasma\|style"
+  189  which systemsettings
+  190  kcmshell6 --list | grep -i "appearance\|style\|color\|decoration"
+  191  sudo apt install kde-plasma-desktop plasma-desktop plasma-workspace plasma-pa plasma-nm
+  192  sudo apt install kde-standard
+  193  apt policy kde-standard
+  194  apt search neon-desktop
+  195  sudo apt install neon-desktop
+  196  sudo apt install neon-boot-space
+  197  plasmashell --version
+  198  sudo apt search neon
+  199  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 100 / 100))); xprop -id $W -format _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0;  done'
+  200  exit
+  201  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 100 / 100))); xprop -id $W -format _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0;  done'
+  202  exit
+  203  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 80 / 100))); xprop -id $W -format _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0;  done'
+  204  exit
+  205  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 73 / 100))); xprop -id $W -format _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0;  done'
+  206  exit
+  207  ls -la /dev
+  208  lsblk
+  209  sudo mount dev/sda2 mnt
+  210  sudo mount /dev/sda2 mnt
+  211  cd /mnt
+  212  ls
+  213  sudo umount /dev/sda2 2>/dev/null; sudo mkfs.vfat -F 32 /dev/sda2
+  214  ls
+  215  cd Documents/
+  216  cd Documents
+  217  ls
+  218  lsblk
+  219  cd /media/youssefmohammed/FA8D-545B
+  220  ls
+  221  ls
+  222  ls -la
+  223  .
+  224  man .
+  225  man man
+  226  shutdown now
+  227  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 73 / 100))); xprop -id $W -format _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0;  done'
+  228  exit
+  229  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 73 / 100))); xprop -id $W -format _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0;  done'
+  230  exit
+  231  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 73 / 100))); xprop -id $W -format _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0;  done'
+  232  exit
+  233  ls
+  234  cd ..
+  235  ls
+  236  cd ..
+  237  ls
+  238  sudo ./lampp start
+  239  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 73 / 100))); xprop -id $W -format _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0;  done'
+  240  exit
+  241  sudo apt remove --purge
+  242  sudo systemctl stop mysql
+  243  sudo apt-get remove --purge mysql-server mysql-server-8.0 mysql-client mysql-client-8.0 mysql-common
+  244  sudo apt install mysql-server
+  245  sudo apt --fix-broken install
+  246  sudo systemctl stop mysql
+  247  sudo dpkg-reconfigure mysql-server-8.0
+  248  sudo apt-get remove --purge mysql-server mysql-server-8.0
+  249  sudo apt autoremove
+  250  sudo apt install mysql-server
+  251  sudo cat /var/log/mysql/error.log
+  252  sudo apt install mysql-server
+  253  sudo systemctl status mysql
+  254  mysql --version
+  255  mysql -u root -p
+  256  sudo mysql
+  257  pwd
+  258  cd /
+  259  cd /opt/lampp
+  260  ls
+  261  cd phpmyadmin/
+  262  ls
+  263  cd ..
+  264  sudo ./manager-linux-x64.run
+  265  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  266  php "/opt/lampp/htdocs/IEEE/S6/Task/tempCodeRunnerFile.php"
+  267  sudo apt search php
+  268  php "/opt/lampp/htdocs/IEEE/S6/Task/tempCodeRunnerFile.php"
+  269  sudo apt install php8.3-cli
+  270  sudo apt install php8.3-cli
+  271  php "/opt/lampp/htdocs/IEEE/S6/Task/tempCodeRunnerFile.php"
+  272  php "/opt/lampp/htdocs/IEEE/S6/Task/Q1.php"
+  273  cls
+  274  clear
+  275  cd ..
+  276  cd ..
+  277  sudo ./lampp start
+  278  sudo apt search mysql
+  279  sudo apt search mysql-
+  280  sudo apt install mysql-server
+  281  sudo apt remove mysql-server
+  282  sudo apt --purge
+  283  sudo apt remove  --purge
+  284  sudo apt remove  --purge
+  285  sudo ./lampp start
+  286  sudo ./lampp stop
+  287  ls
+  288  sudo ./mysql
+  289  mysql
+  290  sudo mysql
+  291  sudo ./lampp start
+  292  mysql
+  293  ls
+  294  mysql
+  295  sudo mysql
+  296  sudo ./xampp
+  297  sudo ./xampp start
+  298  ls
+  299  sudo phpmyadmin
+  300  phpmyadmin
+  301  sudo ./phpmyadmin
+  302  sudo nano /etc/sddm.conf
+  303  cd /etc
+  304  ls
+  305  cd sddm
+  306  ls
+  307  sudo nano /etc/sddm.conf
+  308  sudo reboot
+  309  sudo nano /etc/sddm.conf
+  310  sudo reboot
+  311  sudo apt install git cmake g++ extra-cmake-modules qt6-tools-dev kwin-dev libkf6configwidgets-dev gettext libkf6crash-dev libkf6globalaccel-dev libkf6kio-dev libkf6service-dev libkf6notifications-dev libkf6kcmutils-dev libkdecorations3-dev libxcb-composite0-dev libxcb-randr0-dev libxcb-shm0-dev
+  312  git clone https://github.com/taj-ny/kwin-effects-forceblur
+  313  cd kwin-effects-forceblur
+  314  mkdir build
+  315  cd build
+  316  cmake ../ -DCMAKE_INSTALL_PREFIX=/usr
+  317  make -j
+  318  sudo make install
+  319  qdbus org.kde.KWin /KWin org.kde.KWin.queryWindowInfo
+  320  sudo apt install qtchooser
+  321  qdbus org.kde.KWin /KWin org.kde.KWin.queryWindowInfo
+  322  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 73 / 100))); xprop -id $W -format _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0;  done'
+  323  exit
+  324  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 97 / 100))); done'
+  325  exit
+  326  sudo apt install -y wmctrl x11-utils bash
+  327  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  328  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  329  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  330  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 80 / 100))); done'
+  331  exit
+  332  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  333  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 75 / 100))); done'
+  334  exit
+  335  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 50 / 100))); done'
+  336  exit
+  337  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 65 / 100))); done'
+  338  exit
+  339  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  340  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  341  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  342  cd ~
+  343  ;s
+  344  ls
+  345  cd Documents/
+  346  cd Coding
+  347  ls
+  348  cd ICPC
+  349  code ./
+  350  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 65 / 100))); done'
+  351  exit
+  352   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-lt3lot0o.a53 
+  353  TheQuickBrownFoxJumpsOverTheLazyDog
+  354  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 65 / 100))); done'
+  355  exit
+  356   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-xnrrf4b5.b3a 
+  357  10 11 2
+  358  4
+  359  1 2
+  360  2 4
+  361  3 3
+  362  1 4
+  363   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-bx4ep40e.vlq 
+  364  10 11 2
+  365  4
+  366  1 2
+  367  2 4
+  368  3 3
+  369  1 4
+  370   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-kqkhbwgy.nwq 
+  371  2 4
+  372  3 3
+  373  1 4
+  374   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-k55pkyrj.eks 
+  375   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-rtyufd2n.r4z 
+  376  2 4
+  377  3 3
+  378  1 4
+  379  cd "/home/youssefmohammed/Documents/Coding/ICPC/" && g++ C_2_D_Prefix_Sum.cpp -o C_2_D_Prefix_Sum && "/home/youssefmohammed/Documents/Coding/ICPC/"C_2_D_Prefix_Sum
+  380  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  381  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  382  sudo apt install kvantum
+  383  sudo apt update
+  384  cd ~/.local/share/warp-terminal/themes/
+  385  ls
+  386  cat 11.yaml
+  387  sudo nano nordtest1.yaml
+  388  cd ~/.local/share/warp-terminal/themes/
+  389  ls
+  390  sudo nano nordtest1.yaml
+  391  rm -r nordtest1.png
+  392  exit
+  393  sudo apt update
+  394  sudo apt upgrade
+  395  pkcon update
+  396  sudo apt install kvantum
+  397  sudo apt search kvantum
+  398  sudo apt search qt6-style
+  399  sudo apt search qt6
+  400  sudo add-apt-repository ppa:papirus/papirus
+  401  sudo apt update
+  402  sudo apt install qt6-style-kvantum qt6-style-kvantum-themes
+  403  sudo apt install qt6-style-kvantum qt6-style-kvantum-themes
+  404  sudo apt install qt6-style-kvantum
+  405  kvantum
+  406  sudo apt install kvantummanager
+  407  sudo apt update
+  408  sudo apt install qt6-style-kvantum qt6-style-kvantum-themes
+  409  apt search kvantum
+  410  sudo apt install qt6-style-kvantum qt5-style-kvantum-themes
+  411  kvantum
+  412  kvantummannager
+  413  sudo apt search kvantum
+  414  kvantummanager
+  415  cd ~/user/share
+  416  cd ~/user
+  417  ls
+  418  cd ..
+  419  cd ..
+  420  ls
+  421  cd ~
+  422  ls
+  423  cd ls -la
+  424  ls -la
+  425  cd .themes/
+  426  ls -la
+  427  cd ..
+  428  ls -la
+  429  cd .local/ls
+  430  ls -la .local
+  431  cd .local/share
+  432  ls
+  433  ls -la
+  434  cd sddm
+  435  ls
+  436  cd ..
+  437  ls
+  438  ls -la
+  439  cd /
+  440  ls
+  441  cd usr
+  442  la
+  443  ls -la
+  444  cd share
+  445  ls
+  446  cd themes
+  447  ls
+  448  ls -la
+  449  ls -la ~/.local/share/plasma/desktoptheme/ 
+  450  cd ~/.local/share/plasma/desktoptheme/
+  451  cd ~/Downloads/
+  452  ls -la
+  453  sudo apt install libqt5svg5 qml-module-qtquick-controls
+  454  sudo dpkg -i /path/to/ocs-url*.deb
+  455  sudo apt remove --purge
+  456  grep apt
+  457  man grep
+  458  find / -name apt
+  459  sudo find / -name apt
+  460  cd /etc/apt
+  461  ls
+  462  dpkg -L libqt5svg5
+  463  cd .local/share
+  464  ls
+  465  cd look
+  466  cd /usr/share/sddm/themes
+  467  ls
+  468  sudo nano /etc/sddm.conf
+  469  sudo systemctl restart sdm
+  470  sudo systemctl restart sddm
+  471  sudo apt install --reinstall sddm
+  472  sudo dpkg-reconfigure sddm
+  473  sudo reboot
+  474  ls /usr/share/sddm/themes
+  475  grep "Current=" /etc/sddm.conf
+  476  grep "Current=" /etc/
+  477  grep "Current=" /etc
+  478  grep --recursive 'Current=' /etc
+  479  sudo grep --recursive 'Current=' /etc
+  480  cat /etc/sddm.conf
+  481  cat /etc/sddm.conf.d/kde_settings.conf
+  482  cd /usr/share/sddm/themes/
+  483  ls
+  484  cd Layan
+  485  grep -r fontSize .
+  486  cat /etc/locale.conf
+  487  sudo nano /etc/locale.conf
+  488  sudo code /etc/locale.conf
+  489  sudo code ./etc/locale.conf
+  490  cd /etc
+  491  l
+  492  ls
+  493  sudo code ./locale.conf
+  494  code ./locale.conf --no-sandbox --user-data-dir=/home/user/.vscode-root
+  495  code ./locale.conf --no-sandbox
+  496  sudo code ./locale.conf --no-sandbox
+  497  code ./locale.conf --no-sandbox
+  498  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 65 / 100))); done'
+  499  exit
+  500  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  501  cat /etc/locale.conf
+  502  sudo reboot
+  503  pwd
+  504  cd ~
+  505  ls
+  506  cd Documents
+  507  ls
+  508  git clone https://github.com/Yousf167/OS_Task.git
+  509  cd OS_Task/
+  510  mkdir clinic_records
+  511  mkdir clinic_records/admin/logs
+  512  mkdir -p clinic_records/admin/logs
+  513  cd clinic_records/
+  514  ls
+  515  cd admin
+  516  ls
+  517  cd ..
+  518  cd ..
+  519  ls
+  520  cd clinic_records/
+  521  ls
+  522  mkdir -p doctors/patients
+  523  mkdir -p reception/schedule
+  524  ls
+  525  cd doctors
+  526  ls
+  527  cd ..
+  528  ls
+  529  ls
+  530  cd doctors
+  531  ls
+  532  cd patients
+  533  ls
+  534  locate
+  535  sudo snap list
+  536  cd ..
+  537  nano doctors_list.txt
+  538  cd ..
+  539  ls
+  540  cd doctors
+  541  ls
+  542  cd patients
+  543  nano patients_list.txt
+  544  cd ../admin
+  545  ;s
+  546  ls
+  547  cd ..
+  548  ls
+  549  cd ..
+  550  ls
+  551  cd admin
+  552  ls
+  553  chmod 770 ../patients
+  554  cd ..
+  555  cd ..
+  556  cd clinic_records/
+  557  ls
+  558  cd doctors
+  559  ls patients
+  560  ls
+  561  cd patients
+  562  ls
+  563  nano patients_list.txt
+  564  grep "diabetes"
+  565  nano patients_list.txt
+  566  grep "diabetes" *.txt
+  567  cd ..
+  568  ls
+  569  chmod 770 /patients
+  570  chmod 770 patients
+  571  cd patients
+  572  cd ..
+  573  ls -la
+  574  ls
+  575  cd patients
+  576  ls
+  577  man tar
+  578  cd ..
+  579  ls
+  580  tar patients
+  581  tar --usage
+  582  man tar
+  583  tar -c patients/
+  584  man tar
+  585  tar -cf patients/
+  586  tar patients.tar.gz patients
+  587  tar patients.tar.gz patients/patients_list.txt
+  588  tar -cvf patients.tar.gz patients/
+  589  ls
+  590  cd patients.tar.gz
+  591  ls -la
+  592  rm -r patients.tar.gz
+  593  ls
+  594  cd ..
+  595  ls
+  596  cd receptiom
+  597  cd reception
+  598  ;s
+  599  ls
+  600  cd schedule/
+  601  echo "patient1" >> 30_4_2023
+  602  ls
+  603  nano 30_4_2023
+  604  rm -r 30_4_2023
+  605  echo "patient1" >> 30_4_2023.txt
+  606  echo "patient2" >> 3_05_2024.txt
+  607  rm -r 30_4_2023.txt
+  608  rm -r 3_05_2024.txt
+  609  l
+  610  ls
+  611  echo "patient3\npatient2" >> 12_06_2014
+  612  rm -r 12_06_2014
+  613  echo "patient3\npatient2" >> 12_06_2014.txt
+  614  nano 12_06_2014.txt
+  615  cd ..
+  616  cd..
+  617  cd ..
+  618  cd ..
+  619  ls
+  620  cd ..
+  621  ls
+  622  cd OS_Task/
+  623  ls
+  624  cd clinic_records/
+  625  ls
+  626  cd admin
+  627  ls
+  628  echo "" >> policy.txt && nano policy.txt
+  629  man history
+  630  history
+  631  history > logs/
+  632  ls
+  633  history > logs/history.txt
