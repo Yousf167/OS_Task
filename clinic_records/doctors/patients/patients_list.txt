@@ -1,0 +1,4 @@
+patient1: diabetes
+patient2: heart disease
+patient3: flu
+
