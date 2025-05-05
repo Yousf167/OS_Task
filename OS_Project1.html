@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priority Scheduling Simulator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .input-section {
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .process-table input {
+            width: 80px;
+        }
+        .gantt-chart {
+            margin: 30px 0;
+            overflow-x: auto;
+        }
+        .gantt-container {
+            display: flex;
+            margin-bottom: 5px;
+        }
+        .gantt-block {
+            padding: 10px 0;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            border-right: 1px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gantt-time {
+            display: flex;
+            margin-top: 5px;
+        }
+        .time-marker {
+            position: relative;
+            text-align: left;
+        }
+        .time-marker::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: 0;
+            height: 5px;
+            border-left: 1px solid #333;
+        }
+        .results {
+            margin-top: 30px;
+        }
+        .error {
+            color: red;
+            margin-top: 5px;
+        }
+        .info-text {
+            background-color: #e8f4fc;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Priority Scheduling Algorithm Simulator</h1>
+        
+        <div class="info-text">
+            <p><strong>Priority Scheduling:</strong> In this algorithm, processes are scheduled based on priority. Lower numbers represent higher priority.</p>
+        </div>
+
+        <div class="input-section">
+            <div class="form-group">
+                <label for="num-processes">Number of Processes:</label>
+                <input type="number" id="num-processes" min="1" max="20" value="3">
+                <div id="process-error" class="error"></div>
+            </div>
+            <button class="btn" id="generate-btn">Generate Process Table</button>
+        </div>
+
+        <div id="process-input" style="display: none;">
+            <table class="process-table">
+                <thead>
+                    <tr>
+                        <th>Process</th>
+                        <th>Arrival Time</th>
+                        <th>Burst Time</th>
+                        <th>Priority</th>
+                    </tr>
+                </thead>
+                <tbody id="process-tbody">
+                    <!-- Process rows will be inserted here -->
+                </tbody>
+            </table>
+            <div id="input-error" class="error"></div>
+            <button class="btn" id="calculate-btn">Calculate Schedule</button>
+        </div>
+
+        <div id="results" class="results" style="display: none;">
+            <h2>Gantt Chart</h2>
+            <div class="gantt-chart">
+                <div id="gantt-blocks" class="gantt-container"></div>
+                <div id="gantt-times" class="gantt-time"></div>
+            </div>
+
+            <h2>Results</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Process</th>
+                        <th>Arrival Time</th>
+                        <th>Burst Time</th>
+                        <th>Priority</th>
+                        <th>Completion Time</th>
+                        <th>Turnaround Time</th>
+                        <th>Waiting Time</th>
+                        <th>Response Time</th>
+                    </tr>
+                </thead>
+                <tbody id="results-tbody">
+                    <!-- Results will be inserted here -->
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Average Waiting Time</th>
+                        <th>Average Turnaround Time</th>
+                        <th>Average Response Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="avg-waiting">-</td>
+                        <td id="avg-turnaround">-</td>
+                        <td id="avg-response">-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // DOM Elements
+        const numProcessesInput = document.getElementById('num-processes');
+        const generateBtn = document.getElementById('generate-btn');
+        const processInput = document.getElementById('process-input');
+        const processTbody = document.getElementById('process-tbody');
+        const calculateBtn = document.getElementById('calculate-btn');
+        const resultsSection = document.getElementById('results');
+        const resultsTbody = document.getElementById('results-tbody');
+        const ganttBlocks = document.getElementById('gantt-blocks');
+        const ganttTimes = document.getElementById('gantt-times');
+        const processError = document.getElementById('process-error');
+        const inputError = document.getElementById('input-error');
+        const avgWaiting = document.getElementById('avg-waiting');
+        const avgTurnaround = document.getElementById('avg-turnaround');
+        const avgResponse = document.getElementById('avg-response');
+
+        // Color generator for Gantt chart
+        function generateColors(count) {
+            const colors = [];
+            for (let i = 0; i < count; i++) {
+                const hue = (i * 137) % 360; // Use golden angle for even distribution
+                colors.push(`hsl(${hue}, 70%, 60%)`);
+            }
+            return colors;
+        }
+
+        // Generate process input table
+        generateBtn.addEventListener('click', () => {
+            const numProcesses = parseInt(numProcessesInput.value);
+            
+            if (isNaN(numProcesses) || numProcesses < 1 || numProcesses > 20) {
+                processError.textContent = 'Please enter a valid number of processes (1-20).';
+                return;
+            }
+            
+            processError.textContent = '';
+            processTbody.innerHTML = '';
+            
+            for (let i = 0; i < numProcesses; i++) {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>P${i+1}</td>
+                    <td><input type="number" class="arrival-time" min="0" value="${i}" required></td>
+                    <td><input type="number" class="burst-time" min="1" value="${Math.floor(Math.random() * 10) + 1}" required></td>
+                    <td><input type="number" class="priority" min="1" value="${Math.floor(Math.random() * 10) + 1}" required></td>
+                `;
+                processTbody.appendChild(row);
+            }
+            
+            processInput.style.display = 'block';
+            resultsSection.style.display = 'none';
+        });
+
+        // Calculate schedule
+        calculateBtn.addEventListener('click', () => {
+            // Validate inputs
+            const arrivalTimeInputs = document.querySelectorAll('.arrival-time');
+            const burstTimeInputs = document.querySelectorAll('.burst-time');
+            const priorityInputs = document.querySelectorAll('.priority');
+            
+            let isValid = true;
+            let errorMessage = '';
+            
+            // Check for valid input values
+            arrivalTimeInputs.forEach((input, idx) => {
+                const value = parseInt(input.value);
+                if (isNaN(value) || value < 0) {
+                    isValid = false;
+                    errorMessage = `Invalid arrival time for P${idx+1}. Must be a non-negative number.`;
+                }
+            });
+            
+            burstTimeInputs.forEach((input, idx) => {
+                const value = parseInt(input.value);
+                if (isNaN(value) || value < 1) {
+                    isValid = false;
+                    errorMessage = `Invalid burst time for P${idx+1}. Must be at least 1.`;
+                }
+            });
+            
+            priorityInputs.forEach((input, idx) => {
+                const value = parseInt(input.value);
+                if (isNaN(value) || value < 1) {
+                    isValid = false;
+                    errorMessage = `Invalid priority for P${idx+1}. Must be at least 1.`;
+                }
+            });
+            
+            if (!isValid) {
+                inputError.textContent = errorMessage;
+                return;
+            }
+            
+            inputError.textContent = '';
+            
+            // Create process array
+            const processes = [];
+            for (let i = 0; i < arrivalTimeInputs.length; i++) {
+                processes.push({
+                    id: i + 1,
+                    arrivalTime: parseInt(arrivalTimeInputs[i].value),
+                    burstTime: parseInt(burstTimeInputs[i].value),
+                    priority: parseInt(priorityInputs[i].value),
+                    remainingTime: parseInt(burstTimeInputs[i].value)
+                });
+            }
+            
+            // Run priority scheduling algorithm
+            const result = priorityScheduling(processes);
+            
+            // Display results
+            displayResults(result, processes);
+        });
+
+        // Priority Scheduling Algorithm
+        function priorityScheduling(processes) {
+            // Create deep copy of processes
+            const processesCopy = JSON.parse(JSON.stringify(processes));
+            
+            // Sort by arrival time initially
+            processesCopy.sort((a, b) => a.arrivalTime - b.arrivalTime);
+            
+            const n = processesCopy.length;
+            const completed = Array(n).fill(false);
+            const gantt = [];
+            const firstResponse = Array(n).fill(-1); // Track first time process gets CPU
+            
+            let currentTime = 0;
+            let completedCount = 0;
+            
+            while (completedCount < n) {
+                let selectedProcess = -1;
+                let highestPriority = Number.MAX_VALUE; // Lower number = higher priority
+                
+                // Find highest priority process that has arrived and not completed
+                for (let i = 0; i < n; i++) {
+                    if (!completed[i] && 
+                        processesCopy[i].arrivalTime <= currentTime && 
+                        processesCopy[i].priority < highestPriority) {
+                        highestPriority = processesCopy[i].priority;
+                        selectedProcess = i;
+                    }
+                }
+                
+                if (selectedProcess === -1) {
+                    // No process is available, advance time
+                    currentTime++;
+                    // Add idle time to Gantt chart if needed
+                    if (gantt.length === 0 || gantt[gantt.length - 1].processId !== 0) {
+                        gantt.push({
+                            processId: 0, // 0 for idle
+                            startTime: currentTime - 1,
+                            endTime: currentTime
+                        });
+                    } else {
+                        // Extend the current idle time
+                        gantt[gantt.length - 1].endTime = currentTime;
+                    }
+                } else {
+                    // If this is the first time this process gets CPU
+                    if (firstResponse[selectedProcess] === -1) {
+                        firstResponse[selectedProcess] = currentTime;
+                    }
+                    
+                    // Process the selected process
+                    const remainingTime = processesCopy[selectedProcess].remainingTime;
+                    
+                    // Execute process until completion
+                    const startTime = currentTime;
+                    currentTime += remainingTime;
+                    processesCopy[selectedProcess].remainingTime = 0;
+                    
+                    // Add to Gantt chart
+                    gantt.push({
+                        processId: processesCopy[selectedProcess].id,
+                        startTime: startTime,
+                        endTime: currentTime
+                    });
+                    
+                    // Mark as completed
+                    completed[selectedProcess] = true;
+                    completedCount++;
+                    
+                    // Record completion time
+                    processesCopy[selectedProcess].completionTime = currentTime;
+                    processesCopy[selectedProcess].turnaroundTime = 
+                        processesCopy[selectedProcess].completionTime - processesCopy[selectedProcess].arrivalTime;
+                    processesCopy[selectedProcess].waitingTime = 
+                        processesCopy[selectedProcess].turnaroundTime - processesCopy[selectedProcess].burstTime;
+                    processesCopy[selectedProcess].responseTime = 
+                        firstResponse[selectedProcess] - processesCopy[selectedProcess].arrivalTime;
+                }
+            }
+            
+            // Calculate averages
+            let totalWaitingTime = 0;
+            let totalTurnaroundTime = 0;
+            let totalResponseTime = 0;
+            
+            for (const process of processesCopy) {
+                totalWaitingTime += process.waitingTime;
+                totalTurnaroundTime += process.turnaroundTime;
+                totalResponseTime += process.responseTime;
+            }
+            
+            const avgWaitingTime = totalWaitingTime / n;
+            const avgTurnaroundTime = totalTurnaroundTime / n;
+            const avgResponseTime = totalResponseTime / n;
+            
+            return {
+                processes: processesCopy,
+                gantt: gantt,
+                avgWaitingTime,
+                avgTurnaroundTime,
+                avgResponseTime
+            };
+        }
+
+        // Display results in the UI
+        function displayResults(result, originalProcesses) {
+            // Clear previous results
+            resultsTbody.innerHTML = '';
+            ganttBlocks.innerHTML = '';
+            ganttTimes.innerHTML = '';
+            
+            // Sort processes by ID for display
+            const sortedProcesses = [...result.processes].sort((a, b) => a.id - b.id);
+            
+            // Display process results
+            sortedProcesses.forEach(process => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>P${process.id}</td>
+                    <td>${process.arrivalTime}</td>
+                    <td>${process.burstTime}</td>
+                    <td>${process.priority}</td>
+                    <td>${process.completionTime}</td>
+                    <td>${process.turnaroundTime}</td>
+                    <td>${process.waitingTime}</td>
+                    <td>${process.responseTime}</td>
+                `;
+                resultsTbody.appendChild(row);
+            });
+            
+            // Display average times
+            avgWaiting.textContent = result.avgWaitingTime.toFixed(2);
+            avgTurnaround.textContent = result.avgTurnaroundTime.toFixed(2);
+            avgResponse.textContent = result.avgResponseTime.toFixed(2);
+            
+            // Generate colors for processes
+            const colors = generateColors(originalProcesses.length);
+            
+            // Calculate total chart width
+            const totalTime = result.gantt[result.gantt.length - 1].endTime;
+            const blockWidthPercentage = 100;
+            
+            // Display Gantt chart
+            let lastEndTime = 0;
+            result.gantt.forEach(block => {
+                // Add block
+                const duration = block.endTime - block.startTime;
+                const blockWidth = (duration / totalTime) * blockWidthPercentage + '%';
+                
+                const ganttBlock = document.createElement('div');
+                ganttBlock.className = 'gantt-block';
+                ganttBlock.style.width = blockWidth;
+                
+                if (block.processId === 0) {
+                    ganttBlock.textContent = 'Idle';
+                    ganttBlock.style.backgroundColor = '#cccccc';
+                } else {
+                    ganttBlock.textContent = `P${block.processId}`;
+                    ganttBlock.style.backgroundColor = colors[block.processId - 1]; // -1 because process IDs start at 1
+                }
+                
+                ganttBlocks.appendChild(ganttBlock);
+                
+                // Add time marker for start time if it's not already added
+                if (block.startTime !== lastEndTime) {
+                    const timeMarker = document.createElement('div');
+                    timeMarker.className = 'time-marker';
+                    timeMarker.style.width = ((block.startTime - lastEndTime) / totalTime) * blockWidthPercentage + '%';
+                    timeMarker.textContent = lastEndTime;
+                    ganttTimes.appendChild(timeMarker);
+                    lastEndTime = block.startTime;
+                }
+                
+                // Add time marker for this block
+                const timeMarker = document.createElement('div');
+                timeMarker.className = 'time-marker';
+                timeMarker.style.width = blockWidth;
+                timeMarker.textContent = block.startTime;
+                ganttTimes.appendChild(timeMarker);
+                
+                lastEndTime = block.endTime;
+            });
+            
+            // Add final time marker
+            const finalMarker = document.createElement('div');
+            finalMarker.className = 'time-marker';
+            finalMarker.textContent = lastEndTime;
+            ganttTimes.appendChild(finalMarker);
+            
+            // Show results section
+            resultsSection.style.display = 'block';
+        }
+
+        // Initialize with 3 processes
+        generateBtn.click();
+    </script>
+</body>
+</html>
