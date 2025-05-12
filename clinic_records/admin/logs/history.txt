@@ -1,500 +1,500 @@
-  134  pwd
-  135  cd Downloads/
+  110  | `()` | **Subshell**: run commands in a new shell instance |
+  111  | `$()` | **Command substitution**: run command and replace with its output |
+  112  | `$(())` | **Arithmetic expansion** |
+  113  | `#` | **Comment**: everything after is ignored |
+  114  | `~` | **Home directory shortcut** |
+  115  | `.` | **Current directory** (also source a script with `.`) |
+  116  | `..` | **Parent directory** |
+  117  | `-` | **Previous directory** (`cd -`) |
+  118  | `:` | **No-op**: does nothing, always returns success |
+  119  | `%` | **Job control** (e.g., `%1` refers to job 1) |
+  120  | `^` | **Used in substitutions in history** (rare) |
+  121  ---
+  122  ### A few extra important ones when combined:
+  123  - `2>` — redirect **stderr**.
+  124  - `2>&1` — redirect **stderr to stdout**.
+  125  - `|&` — **pipe stdout and stderr together** (shortcut for `2>&1 |`).
+  126  ---
+  127  ### Summary
+  128  - **Redirection and piping**: `|`, `>`, `>>`, `<`, `<<`, `<<<`
+  129  - **Logical operations**: `&&`, `||`, `;`
+  130  - **Background/Jobs**: `&`, `%`
+  131  - **Wildcards/Expansions**: `*`, `?`, `[ ]`, `{ }`
+  132  - **Subshells and substitutions**: `()`, `$()`, `$(())`
+  133  ---
+  134  Would you also like a **smll mindmap diagram** showing how they’re grouped (redirection, logic, expansion, etc.)? It can help visualize it easily. 🚀  
+  135  (Just say yes if you want; z;  kil; 
   136  ls
-  137  cd ..
-  138  cd Documents/
-  139  ls
-  140  cd Coding
-  141  ls
-  142  mkdir marwanCode && cd marwanCode
-  143  code ./
-  144  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 100 / 100))); xprop -id $W -format _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0;  done'
-  145  exit
-  146  pip install tkinter
-  147  sudo apt install pipx
-  148  pipx --version
-  149  pipx install tkintre
-  150  pipx install tkinter
-  151  pipx install python-tk
-  152  pipx install tk
-  153  pip install tk
-  154  apt install python3-tk
-  155  sudo apt install python3-tk
-  156  sudo apt autoremove
-  157  sudo apt install python3-matplotlib
-  158  code --version
-  159  sudo apt update && sudo apt install code
-  160  /bin/python3 /home/youssefmohammed/Documents/Coding/marwanCode/project.py
-  161  /bin/python3 /home/youssefmohammed/Documents/Coding/marwanCode/project.py
-  162  /bin/python3 /home/youssefmohammed/Documents/Coding/marwanCode/project.py
-  163  python -u "/home/youssefmohammed/Documents/Coding/marwanCode/project.py"
-  164  python3 --version
-  165  python3 project.py
-  166  sudo apt install tkinter
-  167  pip install tkinter
-  168  sudo apt install python3-pip
-  169  pip install tkinter
-  170  sudo snap refresh code
-  171  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 100 / 100))); xprop -id $W -format _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0;  done'
-  172  exit
-  173  sudo apt install plasma-oa
-  174  sudo apt install plasma-pa
-  175  pactl info
-  176  systemctl --user enable --now pipewire pipewire-pulse
-  177  reboot
-  178  python3 project.py
-  179  man sadf
-  180  sadf
-  181  sudo apt install kvantum
-  182  sudo apt install kvantum
-  183  sudo apt update
-  184  sudo apt install kvantum
-  185  sudo apt search kvantum
-  186  apt policy kvantum
-  187  apt search kvantum
-  188  apt search breeze | grep -i "plasma\|style"
-  189  which systemsettings
-  190  kcmshell6 --list | grep -i "appearance\|style\|color\|decoration"
-  191  sudo apt install kde-plasma-desktop plasma-desktop plasma-workspace plasma-pa plasma-nm
-  192  sudo apt install kde-standard
-  193  apt policy kde-standard
-  194  apt search neon-desktop
-  195  sudo apt install neon-desktop
-  196  sudo apt install neon-boot-space
-  197  plasmashell --version
-  198  sudo apt search neon
-  199  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 100 / 100))); xprop -id $W -format _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0;  done'
-  200  exit
-  201  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 100 / 100))); xprop -id $W -format _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0;  done'
-  202  exit
-  203  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 80 / 100))); xprop -id $W -format _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0;  done'
-  204  exit
-  205  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 73 / 100))); xprop -id $W -format _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0;  done'
-  206  exit
-  207  ls -la /dev
-  208  lsblk
-  209  sudo mount dev/sda2 mnt
-  210  sudo mount /dev/sda2 mnt
-  211  cd /mnt
-  212  ls
-  213  sudo umount /dev/sda2 2>/dev/null; sudo mkfs.vfat -F 32 /dev/sda2
-  214  ls
-  215  cd Documents/
-  216  cd Documents
-  217  ls
-  218  lsblk
-  219  cd /media/youssefmohammed/FA8D-545B
-  220  ls
-  221  ls
-  222  ls -la
-  223  .
-  224  man .
-  225  man man
-  226  shutdown now
-  227  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 73 / 100))); xprop -id $W -format _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0;  done'
-  228  exit
-  229  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 73 / 100))); xprop -id $W -format _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0;  done'
-  230  exit
-  231  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 73 / 100))); xprop -id $W -format _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0;  done'
-  232  exit
-  233  ls
-  234  cd ..
-  235  ls
-  236  cd ..
-  237  ls
-  238  sudo ./lampp start
-  239  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 73 / 100))); xprop -id $W -format _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0;  done'
-  240  exit
-  241  sudo apt remove --purge
-  242  sudo systemctl stop mysql
-  243  sudo apt-get remove --purge mysql-server mysql-server-8.0 mysql-client mysql-client-8.0 mysql-common
-  244  sudo apt install mysql-server
-  245  sudo apt --fix-broken install
-  246  sudo systemctl stop mysql
-  247  sudo dpkg-reconfigure mysql-server-8.0
-  248  sudo apt-get remove --purge mysql-server mysql-server-8.0
-  249  sudo apt autoremove
-  250  sudo apt install mysql-server
-  251  sudo cat /var/log/mysql/error.log
-  252  sudo apt install mysql-server
-  253  sudo systemctl status mysql
-  254  mysql --version
-  255  mysql -u root -p
-  256  sudo mysql
-  257  pwd
-  258  cd /
-  259  cd /opt/lampp
-  260  ls
-  261  cd phpmyadmin/
-  262  ls
-  263  cd ..
-  264  sudo ./manager-linux-x64.run
-  265  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  266  php "/opt/lampp/htdocs/IEEE/S6/Task/tempCodeRunnerFile.php"
-  267  sudo apt search php
-  268  php "/opt/lampp/htdocs/IEEE/S6/Task/tempCodeRunnerFile.php"
-  269  sudo apt install php8.3-cli
-  270  sudo apt install php8.3-cli
-  271  php "/opt/lampp/htdocs/IEEE/S6/Task/tempCodeRunnerFile.php"
-  272  php "/opt/lampp/htdocs/IEEE/S6/Task/Q1.php"
-  273  cls
-  274  clear
-  275  cd ..
-  276  cd ..
-  277  sudo ./lampp start
-  278  sudo apt search mysql
-  279  sudo apt search mysql-
-  280  sudo apt install mysql-server
-  281  sudo apt remove mysql-server
-  282  sudo apt --purge
-  283  sudo apt remove  --purge
-  284  sudo apt remove  --purge
-  285  sudo ./lampp start
-  286  sudo ./lampp stop
-  287  ls
-  288  sudo ./mysql
-  289  mysql
-  290  sudo mysql
-  291  sudo ./lampp start
-  292  mysql
-  293  ls
-  294  mysql
-  295  sudo mysql
-  296  sudo ./xampp
-  297  sudo ./xampp start
+  137  ls
+  138  pwd
+  139  alias doctorDir='/home/youssefmohammed/Documents/OS_Task/clinic_records/doctors'
+  140  cd doctorDir
+  141  sudo nano ~/.bashrc
+  142  alias doctorDir='cd /home/youssefmohammed/Documents/OS_Task/clinic_records/doctors'
+  143  doctorDir
+  144  git status
+  145  git add .
+  146  git commit -m "created the structure and tested some commands" && git push
+  147  git config --global user.email "yousf.1672004@gmail.com"
+  148  git config --global user.name "Yousf167"
+  149  git commit -m "created the structure and tested some commands" && git push
+  150  sudo nano /etc/NetworkManager/NetworkManager.conf
+  151  sudo systemctl restart NetworkManager
+  152  nmcli networking connectivity-check false
+  153  sudo nano /etc/NetworkManager/NetworkManager.conf
+  154  sudo systemctl restart NetworkManager
+  155  git status
+  156  git commit -m "created the structure and tested some commands"
+  157  git add .
+  158  git commit -m "added the new files"
+  159  git push
+  160  git push
+  161  git config --global credential.helper cache
+  162  git config --global credential.helper store
+  163  git status
+  164  git add .
+  165  c ..
+  166  cd ..
+  167  cd ..
+  168  ls
+  169  cd ..
+  170  cd -
+  171  ls
+  172  git add .
+  173  ls
+  174  git status
+  175  git commit -m "update"
+  176  git push
+  177  ls ~/.ssh
+  178  ssh-keygen -t ed25519 -C "yousf.1672004@gmail.com"
+  179  eval "$(ssh-agent -s)"
+  180  ssh-add ~/.ssh/id_ed25519
+  181  cat ~/.ssh/id_ed25519.pub
+  182  git remote set-url origin git@github.com:Yousf167/
+  183  git config --global url."git@github.com:".insteadOf "https://github.com/"
+  184  git remote -v
+  185  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  186  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  187  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  188  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  189  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 65 / 100))); done'
+  190  exit
+  191  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  192  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  193  cd ~
+  194  ls
+  195  cd Sync/Obsidian_notes/
+  196  git add .
+  197  git commit -m "update"
+  198  git push
+  199  git status
+  200  git log
+  201  git status
+  202  git log
+  203  git push
+  204  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  205   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-p1phcrru.qdw 
+  206  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  207  cd "/home/youssefmohammed/Documents/Coding/ICPC/" && g++ A_Halloumi_Boxes.cpp -o A_Halloumi_Boxes && "/home/youssefmohammed/Documents/Coding/ICPC/"A_Halloumi_Boxes
+  208  cd "/home/youssefmohammed/Documents/Coding/ICPC/" && g++ A_Halloumi_Boxes.cpp -o A_Halloumi_Boxes && "/home/youssefmohammed/Documents/Coding/ICPC/"A_Halloumi_Boxes
+  209  cd "/home/youssefmohammed/Documents/Coding/ICPC/" && g++ A_Halloumi_Boxes.cpp -o A_Halloumi_Boxes && "/home/youssefmohammed/Documents/Coding/ICPC/"A_Halloumi_Boxes
+  210  cd "/home/youssefmohammed/Documents/Coding/ICPC/" && g++ A_Halloumi_Boxes.cpp -o A_Halloumi_Boxes && "/home/youssefmohammed/Documents/Coding/ICPC/"A_Halloumi_Boxes
+  211  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  212  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  213  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  214  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  215  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  216  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  217   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-eagdlpyz.xju 
+  218  2 0
+  219  ab
+  220  2 1
+  221  ba6
+  222  aaaaaa
+  223  a
+  224  a
+  225  a
+  226  a
+  227  a
+  228  a
+  229  a
+  230  a
+  231   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-qcwslwhz.ekf 
+  232  2 0
+  233  ab
+  234  2 1
+  235  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  236  sudo /opt/lampp/lampp start
+  237  sudo /opt/lampp/lampp status
+  238  sudo /opt/lampp/lampp stop
+  239   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-u53fedmp.lof 
+  240   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-iimthioh.iov 
+  241  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  242  cd "/home/youssefmohammed/Documents/Coding/ICPC/" && g++ B_Longest_Divisors_Interval.cpp -o B_Longest_Divisors_Interval && "/home/youssefmohammed/Documents/Coding/ICPC/"B_Longest_Divisors_Interval
+  243  cd "/home/youssefmohammed/Documents/Coding/ICPC/" && g++ B_Longest_Divisors_Interval.cpp -o B_Longest_Divisors_Interval && "/home/youssefmohammed/Documents/Coding/ICPC/"B_Longest_Divisors_Interval
+  244  cd "/home/youssefmohammed/Documents/Coding/ICPC/" && g++ B_Longest_Divisors_Interval.cpp -o B_Longest_Divisors_Interval && "/home/youssefmohammed/Documents/Coding/ICPC/"B_Longest_Divisors_Interval
+  245  cd "/home/youssefmohammed/Documents/Coding/ICPC/" && g++ B_Longest_Divisors_Interval.cpp -o B_Longest_Divisors_Interval && "/home/youssefmohammed/Documents/Coding/ICPC/"B_Longest_Divisors_Interval
+  246  365988220345828080
+  247  387701719537826430
+  248  620196883578129853
+  249  864802341280805662
+  250  1000000000000000000
+  251  cd "/home/youssefmohammed/Documents/Coding/ICPC/" && g++ B_Longest_Divisors_Interval.cpp -o B_Longest_Divisors_Interval && "/home/youssefmohammed/Documents/Coding/ICPC/"B_Longest_Divisors_Interval
+  252  cd "/home/youssefmohammed/Documents/Coding/ICPC/" && g++ B_Longest_Divisors_Interval.cpp -o B_Longest_Divisors_Interval && "/home/youssefmohammed/Documents/Coding/ICPC/"B_Longest_Divisors_Interval
+  253   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-vwaa2ddk.ym0 
+  254   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-duqqqnwj.hye 
+  255   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-i33tiuty.u5w 
+  256   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-ruox0yri.lp4 
+  257   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-mshpbazd.tln 
+  258   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-rqhfnrd0.n44 
+  259   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-x1iopuji.qez 
+  260   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-mn3rcvhq.ljt 
+  261  cd "/home/youssefmohammed/Documents/Coding/ICPC/test/" && g++ Maze.cpp -o Maze && "/home/youssefmohammed/Documents/Coding/ICPC/test/"Maze
+  262   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-w10zrwt2.2no 
+  263   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-5xfrgivh.gct 
+  264   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-sgi5j4vl.sd1 
+  265   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-usvzjloe.fte 
+  266   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-0qjca1rx.bd4 
+  267  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  268  cd /opt
+  269  ls
+  270  cd lampp
+  271  ls
+  272  sudo ./lampp status
+  273  sudo ./lampp startmysql
+  274  sudo ./lampp status
+  275  sudo ./lampp start
+  276  sudo apt install netstat
+  277  sudo apt install net-tools
+  278  sudo ./lampp startmysql
+  279  sudo ./lampp status
+  280  sudo ./lampp start
+  281  sudo ./lampp status
+  282  sudo ./lampp startmysql
+  283  sudo ./lampp status
+  284  sudo ./lampp startmysql --verbose
+  285  sudo tail -n 50 /opt/lampp/logs/mysql_error_log.log
+  286  ps aux | grep mysql
+  287  sudo systemctl stop mysql
+  288  sudo ./lampp startmysql
+  289  sudo ./lampp status
+  290  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  291  cd ..
+  292  ls
+  293  cd ..
+  294  ls
+  295  sudo ./lampp start
+  296  git pull
+  297  cd IEEE
   298  ls
-  299  sudo phpmyadmin
-  300  phpmyadmin
-  301  sudo ./phpmyadmin
-  302  sudo nano /etc/sddm.conf
-  303  cd /etc
-  304  ls
-  305  cd sddm
-  306  ls
-  307  sudo nano /etc/sddm.conf
-  308  sudo reboot
-  309  sudo nano /etc/sddm.conf
-  310  sudo reboot
-  311  sudo apt install git cmake g++ extra-cmake-modules qt6-tools-dev kwin-dev libkf6configwidgets-dev gettext libkf6crash-dev libkf6globalaccel-dev libkf6kio-dev libkf6service-dev libkf6notifications-dev libkf6kcmutils-dev libkdecorations3-dev libxcb-composite0-dev libxcb-randr0-dev libxcb-shm0-dev
-  312  git clone https://github.com/taj-ny/kwin-effects-forceblur
-  313  cd kwin-effects-forceblur
-  314  mkdir build
-  315  cd build
-  316  cmake ../ -DCMAKE_INSTALL_PREFIX=/usr
-  317  make -j
-  318  sudo make install
-  319  qdbus org.kde.KWin /KWin org.kde.KWin.queryWindowInfo
-  320  sudo apt install qtchooser
-  321  qdbus org.kde.KWin /KWin org.kde.KWin.queryWindowInfo
-  322  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 73 / 100))); xprop -id $W -format _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0;  done'
-  323  exit
-  324  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 97 / 100))); done'
-  325  exit
-  326  sudo apt install -y wmctrl x11-utils bash
+  299  ls
+  300  cd htdocs
+  301  ls
+  302  cd IEEE
+  303  git pull
+  304  git pull
+  305  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  306  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  307  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  308  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  309  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  310  sudo ./lampp status
+  311  sudo ./lampp start
+  312  sudo systemctl stop mysql
+  313  sudo ./lampp startmysql
+  314  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  315  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  316   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-0lfhx334.41h 
+  317   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-knf4d13c.aun 
+  318   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-g1dzu5r3.sju 
+  319   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-md5iauvz.dms 
+  320   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-xyg33mzo.old 
+  321   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-upb4nt5d.v03 
+  322  cd "/home/youssefmohammed/Documents/Coding/ICPC/test/" && g++ Maze.cpp -o Maze && "/home/youssefmohammed/Documents/Coding/ICPC/test/"Maze
+  323  cd "/home/youssefmohammed/Documents/Coding/ICPC/test/" && g++ tempCodeRunnerFile.cpp -o tempCodeRunnerFile && "/home/youssefmohammed/Documents/Coding/ICPC/test/"tempCodeRunnerFile
+  324  cd "/home/youssefmohammed/Documents/Coding/ICPC/test/" && g++ tempCodeRunnerFile.cpp -o tempCodeRunnerFile && "/home/youssefmohammed/Documents/Coding/ICPC/test/"tempCodeRunnerFile
+  325  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  326   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-mrwv1jxe.zjo 
   327  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
   328  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  329  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  330  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 80 / 100))); done'
-  331  exit
-  332  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  333  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 75 / 100))); done'
-  334  exit
-  335  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 50 / 100))); done'
-  336  exit
-  337  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 65 / 100))); done'
-  338  exit
-  339  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  340  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  341  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  342  cd ~
-  343  ;s
+  329  cd /home/youssefmohammed/Documents/
+  330  cd OS_Task\\project/
+  331  ls
+  332  cd clinic_records/
+  333  ls
+  334  ls
+  335  cd admin
+  336  ls
+  337  cat policy.txt
+  338  cd ..
+  339  ls
+  340  cd doctors
+  341  ls
+  342  cat doctors_list.txt
+  343  cd patients
   344  ls
-  345  cd Documents/
-  346  cd Coding
-  347  ls
-  348  cd ICPC
-  349  code ./
-  350  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 65 / 100))); done'
-  351  exit
-  352   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-lt3lot0o.a53 
-  353  TheQuickBrownFoxJumpsOverTheLazyDog
-  354  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 65 / 100))); done'
-  355  exit
-  356   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-xnrrf4b5.b3a 
-  357  10 11 2
-  358  4
-  359  1 2
-  360  2 4
-  361  3 3
-  362  1 4
-  363   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-bx4ep40e.vlq 
-  364  10 11 2
-  365  4
-  366  1 2
-  367  2 4
-  368  3 3
-  369  1 4
-  370   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-kqkhbwgy.nwq 
-  371  2 4
-  372  3 3
-  373  1 4
-  374   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-k55pkyrj.eks 
-  375   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-rtyufd2n.r4z 
-  376  2 4
-  377  3 3
-  378  1 4
-  379  cd "/home/youssefmohammed/Documents/Coding/ICPC/" && g++ C_2_D_Prefix_Sum.cpp -o C_2_D_Prefix_Sum && "/home/youssefmohammed/Documents/Coding/ICPC/"C_2_D_Prefix_Sum
-  380  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  381  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  382  sudo apt install kvantum
-  383  sudo apt update
-  384  cd ~/.local/share/warp-terminal/themes/
+  345  cat patients_list.txt
+  346  cd ..
+  347  cd ;;
+  348  cd ..
+  349  ls
+  350  cd reception
+  351  ls
+  352  ls
+  353  cd schedule/
+  354  ;s
+  355  ++ls
+  356  ls
+  357  cat 12_06_2014.txt
+  358  cd ..
+  359  ls
+  360  cd ..
+  361  ls
+  362  cd doctors
+  363  cd patients
+  364  la
+  365  ls
+  366  grep "diabetes" *.txt
+  367  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  368  sudo apt search node
+  369  sudo apt install nodejs
+  370  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  371  cd ~/Downloads/
+  372  ls
+  373  sudo mv -r kubuntu-25.04-desktop-amd64.iso /media/youssefmohammed/FA8D-545B/
+  374  sudo mv kubuntu-25.04-desktop-amd64.iso /media/youssefmohammed/FA8D-545B/
+  375  sudo cp /home/youssefmohammed/dotfiles_backup_2025-04-22_10-08-47 /media/youssefmohammed/FA8D-545B/
+  376  sudo cp -r /home/youssefmohammed/dotfiles_backup_2025-04-22_10-08-47 /media/youssefmohammed/FA8D-545B/
+  377  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  378   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-xujec5l1.qvv 
+  379   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-mzyaxqdl.vnz 
+  380   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-v23dzhhh.kcc 
+  381  cd ..
+  382  ls
+  383  cd Sync
+  384  cd ls
   385  ls
-  386  cat 11.yaml
-  387  sudo nano nordtest1.yaml
-  388  cd ~/.local/share/warp-terminal/themes/
-  389  ls
-  390  sudo nano nordtest1.yaml
-  391  rm -r nordtest1.png
-  392  exit
-  393  sudo apt update
-  394  sudo apt upgrade
-  395  pkcon update
-  396  sudo apt install kvantum
-  397  sudo apt search kvantum
-  398  sudo apt search qt6-style
-  399  sudo apt search qt6
-  400  sudo add-apt-repository ppa:papirus/papirus
-  401  sudo apt update
-  402  sudo apt install qt6-style-kvantum qt6-style-kvantum-themes
-  403  sudo apt install qt6-style-kvantum qt6-style-kvantum-themes
-  404  sudo apt install qt6-style-kvantum
-  405  kvantum
-  406  sudo apt install kvantummanager
-  407  sudo apt update
-  408  sudo apt install qt6-style-kvantum qt6-style-kvantum-themes
-  409  apt search kvantum
-  410  sudo apt install qt6-style-kvantum qt5-style-kvantum-themes
-  411  kvantum
-  412  kvantummannager
-  413  sudo apt search kvantum
-  414  kvantummanager
-  415  cd ~/user/share
-  416  cd ~/user
-  417  ls
+  386  cd Obsidian_notes/
+  387  ls
+  388  git pull
+  389  git status
+  390  git add .
+  391  ls
+  392  git commit -m "Fetching Update"
+  393  git pull
+  394  sudo reboot
+  395  git pull
+  396  git pull
+  397  git commit -m "Fix merge conflict"
+  398  git pull
+  399  git status
+  400  git log
+  401  code .
+  402  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  403  cd ..
+  404  ls
+  405  cd ..
+  406  ls
+  407  cd Documents/
+  408  ls
+  409  cd Coding
+  410  ls
+  411  cd OS\ project/
+  412  ls
+  413  cd ..
+  414  cd ..
+  415  ;s
+  416  ls
+  417  cd ..
   418  cd ..
-  419  cd ..
-  420  ls
-  421  cd ~
-  422  ls
-  423  cd ls -la
-  424  ls -la
-  425  cd .themes/
-  426  ls -la
-  427  cd ..
-  428  ls -la
-  429  cd .local/ls
-  430  ls -la .local
-  431  cd .local/share
-  432  ls
-  433  ls -la
-  434  cd sddm
-  435  ls
-  436  cd ..
-  437  ls
-  438  ls -la
-  439  cd /
-  440  ls
-  441  cd usr
-  442  la
-  443  ls -la
-  444  cd share
-  445  ls
-  446  cd themes
-  447  ls
-  448  ls -la
-  449  ls -la ~/.local/share/plasma/desktoptheme/ 
-  450  cd ~/.local/share/plasma/desktoptheme/
-  451  cd ~/Downloads/
-  452  ls -la
-  453  sudo apt install libqt5svg5 qml-module-qtquick-controls
-  454  sudo dpkg -i /path/to/ocs-url*.deb
-  455  sudo apt remove --purge
-  456  grep apt
-  457  man grep
-  458  find / -name apt
-  459  sudo find / -name apt
-  460  cd /etc/apt
-  461  ls
-  462  dpkg -L libqt5svg5
-  463  cd .local/share
-  464  ls
-  465  cd look
-  466  cd /usr/share/sddm/themes
+  419  ls
+  420  cd youssefmohammed/
+  421  ls
+  422  cd Projects/
+  423  ;s
+  424  ls
+  425  cd /home/youssefmohammed/Documents/OS_Task\project/
+  426  cd "/home/youssefmohammed/Documents/OS_Task\\project"
+  427  ls
+  428  git status
+  429  git add .
+  430  git commit -m "project"
+  431  git push
+  432  git remote add origin https://github.com/Yousf167/OS_Task.git
+  433  git push
+  434  git remote -v
+  435  git push
+  436  git config --list && echo "=== Remote URLs ===" && git remote -v
+  437  git remote set-url origin git@github.com:Yousf167/OS_Task.git
+  438  git remote -v
+  439  git push
+  440  git status
+  441  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  442  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  443  cd "/home/youssefmohammed/Documents/Coding/Studying/" && g++ BST.cpp -o BST && "/home/youssefmohammed/Documents/Coding/Studying/"BST
+  444  cd "/home/youssefmohammed/Documents/Coding/Studying/" && g++ BST.cpp -o BST && "/home/youssefmohammed/Documents/Coding/Studying/"BST
+  445  cd "/home/youssefmohammed/Documents/Coding/Studying/" && g++ BST.cpp -o BST && "/home/youssefmohammed/Documents/Coding/Studying/"BST
+  446   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-4ekgedm5.gt1 
+  447   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-ntr0zq3n.f1x 
+  448  sudo snap install deskreen
+  449  sudo apt install deskreen
+  450  sudo apt update
+  451  sudo apt upgrade
+  452  pkcon update
+  453  sudo apt install deskreen
+  454  sudo reboot
+  455  sudo grub-install --target=x86_64-efi --efi-directory=/boot/efi --recheck
+  456  mount | grep efi
+  457  sudo grub-install --target=x86_64-efi --efi-directory=/boot/efi --recheck
+  458  sudo update-grub
+  459  sudo apt search desk 
+  460  sudo apt search deskr
+  461  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  462  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  463  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  464  cd "/home/youssefmohammed/Downloads/Sections/QueueArray/" && g++ main.cpp -o main && "/home/youssefmohammed/Downloads/Sections/QueueArray/"main
+  465  cd "/home/youssefmohammed/Downloads/Sections/QueueArray/" && g++ main.cpp -o main && "/home/youssefmohammed/Downloads/Sections/QueueArray/"main
+  466  cd obj/Debug
   467  ls
-  468  sudo nano /etc/sddm.conf
-  469  sudo systemctl restart sdm
-  470  sudo systemctl restart sddm
-  471  sudo apt install --reinstall sddm
-  472  sudo dpkg-reconfigure sddm
-  473  sudo reboot
-  474  ls /usr/share/sddm/themes
-  475  grep "Current=" /etc/sddm.conf
-  476  grep "Current=" /etc/
-  477  grep "Current=" /etc
-  478  grep --recursive 'Current=' /etc
-  479  sudo grep --recursive 'Current=' /etc
-  480  cat /etc/sddm.conf
-  481  cat /etc/sddm.conf.d/kde_settings.conf
-  482  cd /usr/share/sddm/themes/
-  483  ls
-  484  cd Layan
-  485  grep -r fontSize .
-  486  cat /etc/locale.conf
-  487  sudo nano /etc/locale.conf
-  488  sudo code /etc/locale.conf
-  489  sudo code ./etc/locale.conf
-  490  cd /etc
-  491  l
-  492  ls
-  493  sudo code ./locale.conf
-  494  code ./locale.conf --no-sandbox --user-data-dir=/home/user/.vscode-root
-  495  code ./locale.conf --no-sandbox
-  496  sudo code ./locale.conf --no-sandbox
-  497  code ./locale.conf --no-sandbox
-  498  bash -c 'for W in $(wmctrl -l |grep "Visual Studio Code" |awk '"'"'{print $1}'"'"'); do xprop -id $W -format _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * 65 / 100))); done'
-  499  exit
-  500  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  501  cat /etc/locale.conf
-  502  sudo reboot
-  503  pwd
-  504  cd ~
-  505  ls
-  506  cd Documents
-  507  ls
-  508  git clone https://github.com/Yousf167/OS_Task.git
-  509  cd OS_Task/
-  510  mkdir clinic_records
-  511  mkdir clinic_records/admin/logs
-  512  mkdir -p clinic_records/admin/logs
-  513  cd clinic_records/
+  468  ./main.o
+  469  sudo ./main.o
+  470  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  471  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  472  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  473  cd "/home/youssefmohammed/Documents/Coding/ICPC/" && g++ tempCodeRunnerFile.cpp -o tempCodeRunnerFile && "/home/youssefmohammed/Documents/Coding/ICPC/"tempCodeRunnerFile
+  474  cd "/home/youssefmohammed/Documents/Coding/ICPC/" && g++ A_AvtoBus.cpp -o A_AvtoBus && "/home/youssefmohammed/Documents/Coding/ICPC/"A_AvtoBus
+  475  cd "/home/youssefmohammed/Documents/Coding/ICPC/" && g++ A_AvtoBus.cpp -o A_AvtoBus && "/home/youssefmohammed/Documents/Coding/ICPC/"A_AvtoBus
+  476   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-dra4u5rl.3o0 
+  477   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-3jqxrdjx.qpf 
+  478  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  479   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-n01bkoja.k3g 
+  480   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-re1ukjkz.vrj 
+  481   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-uhywt41m.bgj 
+  482   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-mkibhy3f.gg2 
+  483   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-eoeufiwt.j1j 
+  484   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-fuqp5xt2.gas 
+  485   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-3urt0pjq.gfk 
+  486  3
+  487  3 6 5
+  488   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-hub5juv0.sgx 
+  489   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-rwnv4imy.w34 
+  490   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-hv3l2lbn.zl0 
+  491   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-340t3qgx.oyp 
+  492   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-3gdg0cdc.54d 
+  493   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-s1c2hv5b.zar 
+  494   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-ggntlcom.www 
+  495   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-1nyamlpb.kge 
+  496   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-q4yng5lf.0ay 
+  497  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  498  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  499  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  500  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  501  ls
+  502  cd clinic_records/
+  503  ls
+  504  l
+  505  la
+  506  ls
+  507  cd reception
+  508  ls
+  509  cd ..
+  510  ls
+  511  cd doctors
+  512  ls
+  513  cd patients
   514  ls
-  515  cd admin
-  516  ls
-  517  cd ..
+  515  cat patients_list.txt
+  516  nano patients_list.txt
+  517  cat patients_list.txt
   518  cd ..
-  519  ls
-  520  cd clinic_records/
+  519  cd ..
+  520  cd ..
   521  ls
-  522  mkdir -p doctors/patients
-  523  mkdir -p reception/schedule
+  522  cd clinic_records/
+  523  cd ..
   524  ls
-  525  cd doctors
+  525  cd clinic_records/
   526  ls
-  527  cd ..
+  527  cd reception
   528  ls
-  529  ls
-  530  cd doctors
-  531  ls
-  532  cd patients
-  533  ls
-  534  locate
-  535  sudo snap list
-  536  cd ..
-  537  nano doctors_list.txt
-  538  cd ..
-  539  ls
-  540  cd doctors
-  541  ls
-  542  cd patients
-  543  nano patients_list.txt
-  544  cd ../admin
-  545  ;s
-  546  ls
-  547  cd ..
-  548  ls
-  549  cd ..
-  550  ls
-  551  cd admin
-  552  ls
-  553  chmod 770 ../patients
-  554  cd ..
-  555  cd ..
-  556  cd clinic_records/
+  529  cd schedule/
+  530  ls
+  531  echo "" >> 11_05_2025
+  532  ls
+  533  cat 
+  534  cat 12_06_2014.txt
+  535  nano 11_05_2025
+  536  cat 11_05_2025
+  537  cd ..
+  538  cd .
+  539  cd ..
+  540  ls
+  541  cd doctors
+  542  ls
+  543  cat doctors_list.txt
+  544  cd patients
+  545  ls
+  546  cat patients_list.txt
+  547  ls
+  548  cd ..
+  549  ls
+  550  cd ,,
+  551  cd ..
+  552  cd ..
+  553  ls
+  554  cd clinic_records/
+  555  ls
+  556  chmod 770 patients
   557  ls
   558  cd doctors
-  559  ls patients
-  560  ls
-  561  cd patients
-  562  ls
-  563  nano patients_list.txt
-  564  grep "diabetes"
-  565  nano patients_list.txt
-  566  grep "diabetes" *.txt
+  559  chmod 770 patients
+  560  ls -l
+  561  ls
+  562  cd patients
+  563  ls
+  564  tar -czvf old_patients.tar.gz patients_list.txt
+  565  ls
+  566  cd ..
   567  cd ..
   568  ls
-  569  chmod 770 /patients
-  570  chmod 770 patients
-  571  cd patients
-  572  cd ..
-  573  ls -la
-  574  ls
-  575  cd patients
-  576  ls
-  577  man tar
-  578  cd ..
-  579  ls
-  580  tar patients
-  581  tar --usage
-  582  man tar
-  583  tar -c patients/
-  584  man tar
-  585  tar -cf patients/
-  586  tar patients.tar.gz patients
-  587  tar patients.tar.gz patients/patients_list.txt
-  588  tar -cvf patients.tar.gz patients/
-  589  ls
-  590  cd patients.tar.gz
-  591  ls -la
-  592  rm -r patients.tar.gz
+  569  grep "diabetes"*.txt
+  570  fg
+  571  grep "diabetes" *.txt
+  572  grep "diabetes" *.txt
+  573  grep *.txt
+  574  cd doctors
+  575  ls
+  576  cd patients
+  577  grep *.txt
+  578  cat patients_list.txt
+  579  grep "flu"
+  580  grep "flu" patients_list.txt
+  581  nano patients_list.txt
+  582  grep "flu" patients_list.txt
+  583  cd ..
+  584  ls
+  585  cd ..
+  586  ls
+  587  ls
+  588  cat policy_link.txt
+  589  rm -r policy_link.txt
+  590  ls
+  591  cd admin
+  592  ln -s ./policy.txt policy_link.txt
   593  ls
   594  cd ..
-  595  ls
-  596  cd receptiom
-  597  cd reception
-  598  ;s
-  599  ls
-  600  cd schedule/
-  601  echo "patient1" >> 30_4_2023
-  602  ls
-  603  nano 30_4_2023
-  604  rm -r 30_4_2023
-  605  echo "patient1" >> 30_4_2023.txt
-  606  echo "patient2" >> 3_05_2024.txt
-  607  rm -r 30_4_2023.txt
-  608  rm -r 3_05_2024.txt
-  609  l
-  610  ls
-  611  echo "patient3\npatient2" >> 12_06_2014
-  612  rm -r 12_06_2014
-  613  echo "patient3\npatient2" >> 12_06_2014.txt
-  614  nano 12_06_2014.txt
-  615  cd ..
-  616  cd..
-  617  cd ..
-  618  cd ..
-  619  ls
-  620  cd ..
-  621  ls
-  622  cd OS_Task/
-  623  ls
-  624  cd clinic_records/
-  625  ls
-  626  cd admin
-  627  ls
-  628  echo "" >> policy.txt && nano policy.txt
-  629  man history
-  630  history
-  631  history > logs/
-  632  ls
-  633  history > logs/history.txt
+  595  cd ..
+  596  ls
+  597  cd clinic_records/
+  598  ls
+  599  mv admin/policy_link.txt ./
+  600  ls
+  601  rm -r policy_link.txt
+  602  ln -s ./admin/policy.txt policy_link.txt
+  603  ls
+  604  cat policy_link.txt
+  605  cd admin
+  606  ls
+  607  cd logs
+  608  ls
+  609  history > history.txt
