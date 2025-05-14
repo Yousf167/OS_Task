@@ -11,11 +11,11 @@
       max-width: 1200px;
       margin: 0 auto;
       padding: 20px;
-      background-color: #f5f5f5;
+      background-color: #3e3e3e00;
     }
 
     .container {
-      background-color: white;
+      background-color: rgb(36, 36, 36);
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -24,11 +24,11 @@
     h1,
     h2 {
       text-align: center;
-      color: #2c3e50;
+      color: #ff5526;
     }
 
     .btn {
-      background: #3498db;
+      background: #ff5526;
       color: white;
       border: none;
       padding: 10px 15px;
@@ -38,13 +38,13 @@
     }
 
     .btn:hover {
-      background: #2980b9;
+      background: #ff6714;
     }
 
     input[type="number"] {
-      width: 100%;
+      width: 4%;
       padding: 8px;
-      border: 1px solid #ccc;
+      border: 1px solid #353535;
       border-radius: 4px;
     }
 
@@ -54,15 +54,36 @@
       margin-bottom: 20px;
     }
 
+    table input[type="number"] {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 6px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	color: #ccc;
+	background-color: #1f1f1f;
+    }
+
     th,
     td {
       padding: 10px;
       border: 1px solid #ddd;
       text-align: center;
+	    color: #ccc;
     }
 
     th {
-      background-color: #f2f2f2;
+      background-color: #4a4a4a;
+    }
+
+    tr:hover {
+      background-color: #ff5526;
+    }
+
+    tr:nth-child(even)
+    {
+      background-color: #4a4a4a;
     }
 
     .gantt-chart {
@@ -92,6 +113,7 @@
       font-size: 10px;
       transform: translateX(-50%);
       white-space: nowrap;
+	color: #ccc;
     }
 
     .error {
@@ -100,11 +122,18 @@
     }
 
     .info-text {
-      background: #e8f4fc;
+      background: #ff5526;
       padding: 10px;
       border-radius: 4px;
       margin-bottom: 15px;
+      color: #ccc;
     }
+
+    #num-processes {
+      background-color: #1f1f1f;
+      color: #ccc;
+    }
+
   </style>
 </head>
 
@@ -117,12 +146,12 @@
 
     <!-- Input Section -->
     <div>
-      <label for="num-processes">Number of Processes (1-20):</label>
+      <label for="num-processes" style="color: #ccc;">Number of Processes (1-20):</label>
       <input type="number" id="num-processes" min="1" max="20" value="3">
       <div id="process-error" class="error"></div>
       <button class="btn" id="generate-btn">Generate Table</button>
     </div>
-
+    <br>
     <!-- Process Table -->
     <div id="process-input" style="display: none;">
       <table>
@@ -378,7 +407,7 @@
             results.style.display = 'block';
       }
 
-      // Auto-init
+      // Auto initialize
       generateBtn.click();
 
   </script>
