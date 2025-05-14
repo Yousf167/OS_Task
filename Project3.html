@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Priority Scheduling Simulator</title>
   <style>
     body {
@@ -12,16 +13,20 @@
       padding: 20px;
       background-color: #f5f5f5;
     }
+
     .container {
       background-color: white;
       padding: 20px;
       border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
-    h1, h2 {
+
+    h1,
+    h2 {
       text-align: center;
       color: #2c3e50;
     }
+
     .btn {
       background: #3498db;
       color: white;
@@ -31,31 +36,44 @@
       font-size: 16px;
       cursor: pointer;
     }
-    .btn:hover { background: #2980b9; }
+
+    .btn:hover {
+      background: #2980b9;
+    }
 
     input[type="number"] {
-      width: 100%; padding: 8px;
+      width: 100%;
+      padding: 8px;
       border: 1px solid #ccc;
       border-radius: 4px;
     }
+
     table {
-      width: 100%; border-collapse: collapse;
+      width: 100%;
+      border-collapse: collapse;
       margin-bottom: 20px;
     }
-    th, td {
+
+    th,
+    td {
       padding: 10px;
       border: 1px solid #ddd;
       text-align: center;
     }
-    th { background-color: #f2f2f2; }
+
+    th {
+      background-color: #f2f2f2;
+    }
 
     .gantt-chart {
       margin: 30px 0;
     }
+
     .gantt-container {
       display: flex;
       margin-bottom: 5px;
     }
+
     .gantt-block {
       padding: 10px 0;
       color: white;
@@ -63,17 +81,24 @@
       text-align: center;
       border-right: 1px solid white;
     }
+
     .gantt-time {
       position: relative;
       height: 20px;
     }
+
     .time-marker {
       position: absolute;
       font-size: 10px;
       transform: translateX(-50%);
       white-space: nowrap;
     }
-    .error { color: red; margin-top: 5px; }
+
+    .error {
+      color: red;
+      margin-top: 5px;
+    }
+
     .info-text {
       background: #e8f4fc;
       padding: 10px;
@@ -82,6 +107,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <h1>Priority Scheduling Simulator</h1>
@@ -159,172 +185,203 @@
   </div>
 
   <script>
-    // === DOM Elements ===
-    const numInput = document.getElementById('num-processes');
-    const generateBtn = document.getElementById('generate-btn');
-    const processTbody = document.getElementById('process-tbody');
-    const processInput = document.getElementById('process-input');
-    const calculateBtn = document.getElementById('calculate-btn');
-    const results = document.getElementById('results');
-    const resultsTbody = document.getElementById('results-tbody');
-    const ganttBlocks = document.getElementById('gantt-blocks');
-    const ganttTimes = document.getElementById('gantt-times');
-    const processError = document.getElementById('process-error');
-    const inputError = document.getElementById('input-error');
-    const avgWaiting = document.getElementById('avg-waiting');
-    const avgTurnaround = document.getElementById('avg-turnaround');
-    const avgResponse = document.getElementById('avg-response');
+      // === DOM Elements ===
+      const numInput = document.getElementById('num-processes');
+      const generateBtn = document.getElementById('generate-btn');
+      const processTbody = document.getElementById('process-tbody');
+      const processInput = document.getElementById('process-input');
+      const calculateBtn = document.getElementById('calculate-btn');
+      const results = document.getElementById('results');
+      const resultsTbody = document.getElementById('results-tbody');
+      const ganttBlocks = document.getElementById('gantt-blocks');
+      const ganttTimes = document.getElementById('gantt-times');
+      const processError = document.getElementById('process-error');
+      const inputError = document.getElementById('input-error');
+      const avgWaiting = document.getElementById('avg-waiting');
+      const avgTurnaround = document.getElementById('avg-turnaround');
+      const avgResponse = document.getElementById('avg-response');
 
-    const generateColors = count => {
-      const colors = [];
-      for (let i = 0; i < count; i++) {
-        const hue = (i * 137) % 360;
-        colors.push(`hsl(${hue}, 70%, 60%)`);
-      }
-      return colors;
-    };
+      const generateColors = count => {
+            
+            const colors = [];
 
-    generateBtn.onclick = () => {
-      const n = parseInt(numInput.value);
-      if (isNaN(n) || n < 1 || n > 20) {
-        processError.textContent = 'Please enter a number between 1 and 20.';
-        return;
-      }
-      processError.textContent = '';
-      processTbody.innerHTML = '';
-      for (let i = 0; i < n; i++) {
-        const row = document.createElement('tr');
-        row.innerHTML = `
-          <td>P${i + 1}</td>
-          <td><input type="number" class="arrival-time" min="0" value="${i}"></td>
-          <td><input type="number" class="burst-time" min="1" value="${Math.floor(Math.random()*10)+1}"></td>
-          <td><input type="number" class="priority" min="1" value="${Math.floor(Math.random()*10)+1}"></td>
-        `;
-        processTbody.appendChild(row);
-      }
-      processInput.style.display = 'block';
-      results.style.display = 'none';
-    };
-
-    calculateBtn.onclick = () => {
-      const arrivals = [...document.querySelectorAll('.arrival-time')];
-      const bursts = [...document.querySelectorAll('.burst-time')];
-      const priorities = [...document.querySelectorAll('.priority')];
-
-      const processes = [];
-      for (let i = 0; i < arrivals.length; i++) {
-        const at = parseInt(arrivals[i].value);
-        const bt = parseInt(bursts[i].value);
-        const pr = parseInt(priorities[i].value);
-        if (isNaN(at) || at < 0 || isNaN(bt) || bt < 1 || isNaN(pr) || pr < 1) {
-          inputError.textContent = `Invalid input at row ${i+1}`;
-          return;
-        }
-        processes.push({ id: i+1, arrivalTime: at, burstTime: bt, priority: pr });
-      }
-      inputError.textContent = '';
-      const result = priorityScheduling(processes);
-      displayResults(result, processes);
-    };
-
-    function priorityScheduling(processes) {
-      const n = processes.length;
-      const proc = processes.map(p => ({...p, remainingTime: p.burstTime}));
-      const gantt = [], completed = Array(n).fill(false), firstStart = Array(n).fill(-1);
-      let currentTime = 0, done = 0;
-
-      while (done < n) {
-        let idx = -1, best = Infinity;
-        for (let i = 0; i < n; i++) {
-          if (!completed[i] && proc[i].arrivalTime <= currentTime) {
-            if (proc[i].priority < best || 
-              (proc[i].priority === best && proc[i].arrivalTime < proc[idx]?.arrivalTime)) {
-              best = proc[i].priority;
-              idx = i;
+            for (let i = 0; i < count; i++) 
+            {
+                  const hue = (i * 137) % 360;
+                  colors.push(`hsl(${hue}, 70%, 60%)`);
             }
-          }
-        }
 
-        if (idx === -1) {
-          gantt.push({ processId: 0, start: currentTime, end: currentTime + 1 });
-          currentTime++;
-        } else {
-          if (firstStart[idx] === -1) firstStart[idx] = currentTime;
-          const p = proc[idx];
-          gantt.push({ processId: p.id, start: currentTime, end: currentTime + p.remainingTime });
-          currentTime += p.remainingTime;
-          completed[idx] = true;
-          done++;
-          p.completionTime = currentTime;
-          p.turnaroundTime = currentTime - p.arrivalTime;
-          p.waitingTime = p.turnaroundTime - p.burstTime;
-          p.responseTime = firstStart[idx] - p.arrivalTime;
-        }
+            return colors;
+      };
+
+      generateBtn.onclick = () => {
+
+            const n = parseInt(numInput.value);
+
+            if (isNaN(n) || n < 1 || n > 20) 
+            {
+                  processError.textContent = 'Please enter a number between 1 and 20.';
+                  return;
+            }
+
+            processError.textContent = '';
+            processTbody.innerHTML = '';
+
+            for (let i = 0; i < n; i++) 
+            {
+                  const row = document.createElement('tr');
+                  row.innerHTML = `
+                  <td>P${i + 1}</td>
+                  <td><input type="number" class="arrival-time" min="0" value="${i}"></td>
+                  <td><input type="number" class="burst-time" min="1" value="${Math.floor(Math.random() * 10) + 1}"></td>
+                  <td><input type="number" class="priority" min="1" value="${Math.floor(Math.random() * 10) + 1}"></td>
+                  `;
+                  processTbody.appendChild(row);
+            }
+
+            processInput.style.display = 'block';
+            results.style.display = 'none';
+      };
+
+      calculateBtn.onclick = () => {
+
+            const arrivals = [...document.querySelectorAll('.arrival-time')];
+            const bursts = [...document.querySelectorAll('.burst-time')];
+            const priorities = [...document.querySelectorAll('.priority')];
+
+            const processes = [];
+            for (let i = 0; i < arrivals.length; i++) 
+            {
+                  const at = parseInt(arrivals[i].value);
+                  const bt = parseInt(bursts[i].value);
+                  const pr = parseInt(priorities[i].value);
+                  if (isNaN(at) || at < 0 || isNaN(bt) || bt < 1 || isNaN(pr) || pr < 1) 
+                  {
+                        inputError.textContent = `Invalid input at row ${i + 1}`;
+                        return;
+                  }
+
+                  processes.push({ id: i + 1, arrivalTime: at, burstTime: bt, priority: pr });
+            }
+            
+            inputError.textContent = '';
+            const result = priorityScheduling(processes);
+            displayResults(result, processes);
+      };
+
+      function priorityScheduling(processes) 
+      {
+            const n = processes.length;
+            const proc = processes.map(p => ({ ...p, remainingTime: p.burstTime }));
+            const gantt = [], completed = Array(n).fill(false), firstStart = Array(n).fill(-1);
+            let currentTime = 0, done = 0;
+
+            while (done < n) 
+            {
+                  let idx = -1, best = Infinity;
+                  for (let i = 0; i < n; i++) 
+                  {
+                        if (!completed[i] && proc[i].arrivalTime <= currentTime) 
+                        {
+                              if (proc[i].priority < best ||
+                                 (proc[i].priority === best && proc[i].arrivalTime < proc[idx]?.arrivalTime)) 
+                              {
+                                  
+                                    best = proc[i].priority;
+                                    idx = i;
+                              }
+                        }
+                  }
+
+                  if (idx === -1) 
+                  {
+                        gantt.push({ processId: 0, start: currentTime, end: currentTime + 1 });
+                        currentTime++;
+                  } 
+                  else 
+                  {
+                        if (firstStart[idx] === -1) firstStart[idx] = currentTime;
+
+                        const p = proc[idx];
+                        gantt.push({ processId: p.id, start: currentTime, end: currentTime + p.remainingTime });
+                        currentTime += p.remainingTime;
+                        completed[idx] = true;
+                        done++;
+                        p.completionTime = currentTime;
+                        p.turnaroundTime = currentTime - p.arrivalTime;
+                        p.waitingTime = p.turnaroundTime - p.burstTime;
+                        p.responseTime = firstStart[idx] - p.arrivalTime;
+                  }
+            }
+
+            const avgW = proc.reduce((a, p) => a + p.waitingTime, 0) / n;
+            const avgT = proc.reduce((a, p) => a + p.turnaroundTime, 0) / n;
+            const avgR = proc.reduce((a, p) => a + p.responseTime, 0) / n;
+
+            return { processes: proc, gantt, avgW, avgT, avgR };
       }
 
-      const avgW = proc.reduce((a, p) => a + p.waitingTime, 0) / n;
-      const avgT = proc.reduce((a, p) => a + p.turnaroundTime, 0) / n;
-      const avgR = proc.reduce((a, p) => a + p.responseTime, 0) / n;
+      function displayResults(result, original) 
+      {
+            resultsTbody.innerHTML = '';
+            ganttBlocks.innerHTML = '';
+            ganttTimes.innerHTML = '';
 
-      return { processes: proc, gantt, avgW, avgT, avgR };
-    }
+            const colors = generateColors(original.length);
+            const totalTime = result.gantt[result.gantt.length - 1].end;
 
-    function displayResults(result, original) {
-      resultsTbody.innerHTML = '';
-      ganttBlocks.innerHTML = '';
-      ganttTimes.innerHTML = '';
+            // Table
+            result.processes.sort((a, b) => a.id - b.id).forEach(p => {
+                  resultsTbody.innerHTML += `
+                  <tr>
+                  <td>P${p.id}</td><td>${p.arrivalTime}</td><td>${p.burstTime}</td><td>${p.priority}</td>
+                  <td>${p.completionTime}</td><td>${p.turnaroundTime}</td>
+                  <td>${p.waitingTime}</td><td>${p.responseTime}</td>
+                  </tr>`;
+            });
 
-      const colors = generateColors(original.length);
-      const totalTime = result.gantt[result.gantt.length - 1].end;
+            avgWaiting.textContent = result.avgW.toFixed(2);
+            avgTurnaround.textContent = result.avgT.toFixed(2);
+            avgResponse.textContent = result.avgR.toFixed(2);
 
-      // Table
-      result.processes.sort((a, b) => a.id - b.id).forEach(p => {
-        resultsTbody.innerHTML += `
-          <tr>
-            <td>P${p.id}</td><td>${p.arrivalTime}</td><td>${p.burstTime}</td><td>${p.priority}</td>
-            <td>${p.completionTime}</td><td>${p.turnaroundTime}</td>
-            <td>${p.waitingTime}</td><td>${p.responseTime}</td>
-          </tr>`;
-      });
+            const timeSet = new Set();
 
-      avgWaiting.textContent = result.avgW.toFixed(2);
-      avgTurnaround.textContent = result.avgT.toFixed(2);
-      avgResponse.textContent = result.avgR.toFixed(2);
+            result.gantt.forEach(block => {
+                  
+                  const duration = block.end - block.start;
+                  const width = (duration / totalTime) * 100;
 
-      const timeSet = new Set();
+                  const div = document.createElement('div');
+                  div.className = 'gantt-block';
+                  div.style.width = width + '%';
+                  div.style.backgroundColor = block.processId === 0 ? '#bbb' : colors[block.processId - 1];
+                  div.textContent = block.processId === 0 ? 'Idle' : `P${block.processId}`;
+                  ganttBlocks.appendChild(div);
 
-      result.gantt.forEach(block => {
-        const duration = block.end - block.start;
-        const width = (duration / totalTime) * 100;
+                  if (!timeSet.has(block.start)) 
+                  {
+                        const t = document.createElement('div');
+                        t.className = 'time-marker';
+                        t.textContent = block.start;
+                        t.style.left = `${(block.start / totalTime) * 100}%`;
+                        ganttTimes.appendChild(t);
+                        timeSet.add(block.start);
+                  }
+            });
 
-        const div = document.createElement('div');
-        div.className = 'gantt-block';
-        div.style.width = width + '%';
-        div.style.backgroundColor = block.processId === 0 ? '#bbb' : colors[block.processId - 1];
-        div.textContent = block.processId === 0 ? 'Idle' : `P${block.processId}`;
-        ganttBlocks.appendChild(div);
+            const endMarker = document.createElement('div');
+            endMarker.className = 'time-marker';
+            endMarker.textContent = result.gantt[result.gantt.length - 1].end;
+            endMarker.style.left = `100%`;
+            ganttTimes.appendChild(endMarker);
 
-        if (!timeSet.has(block.start)) {
-          const t = document.createElement('div');
-          t.className = 'time-marker';
-          t.textContent = block.start;
-          t.style.left = `${(block.start / totalTime) * 100}%`;
-          ganttTimes.appendChild(t);
-          timeSet.add(block.start);
-        }
-      });
+            results.style.display = 'block';
+      }
 
-      const endMarker = document.createElement('div');
-      endMarker.className = 'time-marker';
-      endMarker.textContent = result.gantt[result.gantt.length - 1].end;
-      endMarker.style.left = `100%`;
-      ganttTimes.appendChild(endMarker);
+      // Auto-init
+      generateBtn.click();
 
-      results.style.display = 'block';
-    }
-
-    // Auto-init
-    generateBtn.click();
   </script>
 </body>
+
 </html>
