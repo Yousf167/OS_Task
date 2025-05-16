@@ -1,500 +1,500 @@
-    7  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-    8  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-    9  cd /home/youssefmohammed/Documents/
-   10  cd OS_Task\\project/
-   11  ls
-   12  cd clinic_records/
-   13  ls
-   14  ls
-   15  cd admin
-   16  ls
-   17  cat policy.txt
-   18  cd ..
-   19  ls
-   20  cd doctors
-   21  ls
-   22  cat doctors_list.txt
-   23  cd patients
-   24  ls
-   25  cat patients_list.txt
-   26  cd ..
-   27  cd ;;
-   28  cd ..
-   29  ls
-   30  cd reception
-   31  ls
-   32  ls
-   33  cd schedule/
-   34  ;s
-   35  ++ls
-   36  ls
-   37  cat 12_06_2014.txt
-   38  cd ..
-   39  ls
-   40  cd ..
-   41  ls
-   42  cd doctors
-   43  cd patients
-   44  la
-   45  ls
-   46  grep "diabetes" *.txt
-   47  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-   48  sudo apt search node
-   49  sudo apt install nodejs
-   50  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-   51  cd ~/Downloads/
-   52  ls
-   53  sudo mv -r kubuntu-25.04-desktop-amd64.iso /media/youssefmohammed/FA8D-545B/
-   54  sudo mv kubuntu-25.04-desktop-amd64.iso /media/youssefmohammed/FA8D-545B/
-   55  sudo cp /home/youssefmohammed/dotfiles_backup_2025-04-22_10-08-47 /media/youssefmohammed/FA8D-545B/
-   56  sudo cp -r /home/youssefmohammed/dotfiles_backup_2025-04-22_10-08-47 /media/youssefmohammed/FA8D-545B/
-   57  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-   58   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-xujec5l1.qvv 
-   59   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-mzyaxqdl.vnz 
-   60   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-v23dzhhh.kcc 
-   61  cd ..
-   62  ls
-   63  cd Sync
-   64  cd ls
-   65  ls
-   66  cd Obsidian_notes/
-   67  ls
-   68  git pull
-   69  git status
-   70  git add .
+   40  ls
+   41  cd OS_Task\\project/
+   42  ls
+   43  code .
+   44  code .
+   45  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+   46  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+   47  ls
+   48  cd clinic_records/
+   49  ls
+   50  cd admin
+   51  sudo cd admin
+   52  sudo su
+   53  man su
+   54  ls
+   55  cd admin
+   56  su
+   57  sudo su
+   58  exit
+   59  exit
+   60  cd admin
+   61  sudo cd admin
+   62  sudo su
+   63  ls
+   64  ls
+   65  cd Documents
+   66  ls
+   67  cd OS_Task\\project/
+   68  ;s
+   69  ls
+   70  cd clinic_records/
    71  ls
-   72  git commit -m "Fetching Update"
-   73  git pull
-   74  sudo reboot
-   75  git pull
-   76  git pull
-   77  git commit -m "Fix merge conflict"
-   78  git pull
-   79  git status
-   80  git log
-   81  code .
-   82  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-   83  cd ..
-   84  ls
-   85  cd ..
-   86  ls
-   87  cd Documents/
-   88  ls
-   89  cd Coding
-   90  ls
-   91  cd OS\ project/
-   92  ls
-   93  cd ..
-   94  cd ..
-   95  ;s
-   96  ls
-   97  cd ..
-   98  cd ..
-   99  ls
-  100  cd youssefmohammed/
-  101  ls
-  102  cd Projects/
-  103  ;s
-  104  ls
-  105  cd /home/youssefmohammed/Documents/OS_Task\project/
-  106  cd "/home/youssefmohammed/Documents/OS_Task\\project"
-  107  ls
-  108  git status
-  109  git add .
-  110  git commit -m "project"
-  111  git push
-  112  git remote add origin https://github.com/Yousf167/OS_Task.git
-  113  git push
-  114  git remote -v
-  115  git push
-  116  git config --list && echo "=== Remote URLs ===" && git remote -v
-  117  git remote set-url origin git@github.com:Yousf167/OS_Task.git
-  118  git remote -v
-  119  git push
-  120  git status
-  121  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  122  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  123  cd "/home/youssefmohammed/Documents/Coding/Studying/" && g++ BST.cpp -o BST && "/home/youssefmohammed/Documents/Coding/Studying/"BST
-  124  cd "/home/youssefmohammed/Documents/Coding/Studying/" && g++ BST.cpp -o BST && "/home/youssefmohammed/Documents/Coding/Studying/"BST
-  125  cd "/home/youssefmohammed/Documents/Coding/Studying/" && g++ BST.cpp -o BST && "/home/youssefmohammed/Documents/Coding/Studying/"BST
-  126   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-4ekgedm5.gt1 
-  127   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-ntr0zq3n.f1x 
-  128  sudo snap install deskreen
-  129  sudo apt install deskreen
-  130  sudo apt update
-  131  sudo apt upgrade
-  132  pkcon update
-  133  sudo apt install deskreen
-  134  sudo reboot
-  135  sudo grub-install --target=x86_64-efi --efi-directory=/boot/efi --recheck
-  136  mount | grep efi
-  137  sudo grub-install --target=x86_64-efi --efi-directory=/boot/efi --recheck
-  138  sudo update-grub
-  139  sudo apt search desk 
-  140  sudo apt search deskr
-  141  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  142  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  143  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  144  cd "/home/youssefmohammed/Downloads/Sections/QueueArray/" && g++ main.cpp -o main && "/home/youssefmohammed/Downloads/Sections/QueueArray/"main
-  145  cd "/home/youssefmohammed/Downloads/Sections/QueueArray/" && g++ main.cpp -o main && "/home/youssefmohammed/Downloads/Sections/QueueArray/"main
-  146  cd obj/Debug
+   72  cd admin
+   73  sudo cd admin
+   74  sudo su
+   75  ls
+   76  cd doctors
+   77  cd ..
+   78  ls -a
+   79  ls -l
+   80  ls
+   81  cd clinic_records/
+   82  ls
+   83  cd admin
+   84  cd ..
+   85  ls
+   86  chmod 755 /admin
+   87  chmod 755 ./admin
+   88  cd admin
+   89  cd ..
+   90  ls -la
+   91  sudo chmod 700 ./admin
+   92  cd admin
+   93  sudo chown:root ./admin
+   94  sudo chown root:root ./admin
+   95  cd ..
+   96  sudo chown root:root ./admin
+   97  ls
+   98  ls =la
+   99  ls -la
+  100  cd adiom
+  101  cd admin
+  102  sudo cd admin
+  103  sudo bash -c "cd admin""
+  104  sudo bash -c "cd admin"
+  105  cd ..
+  106  ls
+  107  sudo code ./
+  108  sudo code ./ --no-sandbox
+  109  sudo code --no-sandbox  ./
+  110  sudo --no-sandbox  code .
+  111  clear
+  112  ls
+  113  history > 0
+  114  ls
+  115  rm 0
+  116  ls
+  117  history > history.txt
+  118  cat history.txt
+  119  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  120  cd admon
+  121  cd admin
+  122  ls
+  123  sudo su
+  124  clear
+  125  l
+  126  ls
+  127  ls
+  128  cd doctors
+  129  ls
+  130  cd patients
+  131  ls
+  132  cd ..
+  133  cd ..
+  134  ls
+  135  pwd
+  136  ls
+  137  ls -la
+  138  cd doctors
+  139  ls
+  140  cd patients
+  141  ls
+  142  cat patients_list.txt
+  143  nano patients_list.txt
+  144  touch record.txt
+  145  ls
+  146  touch c.cpp
   147  ls
-  148  ./main.o
-  149  sudo ./main.o
-  150  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  151  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  152  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  153  cd "/home/youssefmohammed/Documents/Coding/ICPC/" && g++ tempCodeRunnerFile.cpp -o tempCodeRunnerFile && "/home/youssefmohammed/Documents/Coding/ICPC/"tempCodeRunnerFile
-  154  cd "/home/youssefmohammed/Documents/Coding/ICPC/" && g++ A_AvtoBus.cpp -o A_AvtoBus && "/home/youssefmohammed/Documents/Coding/ICPC/"A_AvtoBus
-  155  cd "/home/youssefmohammed/Documents/Coding/ICPC/" && g++ A_AvtoBus.cpp -o A_AvtoBus && "/home/youssefmohammed/Documents/Coding/ICPC/"A_AvtoBus
-  156   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-dra4u5rl.3o0 
-  157   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-3jqxrdjx.qpf 
-  158  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/191/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  159   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-n01bkoja.k3g 
-  160   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-re1ukjkz.vrj 
-  161   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-uhywt41m.bgj 
-  162   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-mkibhy3f.gg2 
-  163   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-eoeufiwt.j1j 
-  164   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-fuqp5xt2.gas 
-  165   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-3urt0pjq.gfk 
-  166  3
-  167  3 6 5
-  168   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-hub5juv0.sgx 
-  169   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-rwnv4imy.w34 
-  170   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-hv3l2lbn.zl0 
-  171   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-340t3qgx.oyp 
-  172   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-3gdg0cdc.54d 
-  173   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-s1c2hv5b.zar 
-  174   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-ggntlcom.www 
-  175   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-1nyamlpb.kge 
-  176   /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-q4yng5lf.0ay 
-  177  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  178  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  179  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  180  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  181  ls
-  182  cd clinic_records/
-  183  ls
-  184  l
-  185  la
+  148  rm -r c.pp
+  149  rm -r c.pp
+  150  ls
+  151  rm -r c.cpp
+  152  ls
+  153  ls
+  154  man sudo
+  155  ls
+  156  cd ..
+  157  ls
+  158  cd ..
+  159  ls
+  160  ls -la
+  161  cat policy_link.txt
+  162  sudo cat policy_link.txt
+  163  cd doctors
+  164  ls
+  165  cd patients
+  166  ls
+  167  rm re
+  168  rm record.txt
+  169  ls
+  170  man tar
+  171  tar -cvf patients.tar.gz patients_list.txt
+  172  ls
+  173  cd ..
+  174  ls
+  175  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  176  ls
+  177  cd Documents/
+  178  ls
+  179  cd OS_Task\\project/
+  180  ls
+  181  cd clinic_records/
+  182  ls
+  183  cd doctors/
+  184  ls
+  185  cd patients/
   186  ls
-  187  cd reception
-  188  ls
-  189  cd ..
+  187  tar patients_list.tar.gz patients_list.txt
+  188  tar -czvf  patients_list.tar.gz patients_list.txt
+  189  ;s
   190  ls
-  191  cd doctors
-  192  ls
-  193  cd patients
-  194  ls
-  195  cat patients_list.txt
-  196  nano patients_list.txt
-  197  cat patients_list.txt
-  198  cd ..
-  199  cd ..
-  200  cd ..
-  201  ls
-  202  cd clinic_records/
-  203  cd ..
-  204  ls
-  205  cd clinic_records/
+  191  ls
+  192  rm patients_list.txt
+  193  cat patients_list.txt 
+  194  grep "flu" *.txt
+  195  grep "flu"
+  196  grep "flu" .txt
+  197  grep "flu" patients.txt
+  198  ls
+  199  grep "flu" patients_list.txt
+  200  ls
+  201  cd ..
+  202  cd ..
+  203  ls
+  204  cd reception/
+  205  ls
   206  ls
-  207  cd reception
+  207  cd schedule
   208  ls
-  209  cd schedule/
-  210  ls
-  211  echo "" >> 11_05_2025
-  212  ls
-  213  cat 
-  214  cat 12_06_2014.txt
-  215  nano 11_05_2025
-  216  cat 11_05_2025
-  217  cd ..
-  218  cd .
-  219  cd ..
-  220  ls
-  221  cd doctors
+  209  ls
+  210  echo "patient2" > 05_14_2025.txt
+  211  ls
+  212  cat 05_14_2025.txt 
+  213  nano 05_14_2025.txt 
+  214  cd ..
+  215  ls
+  216  cd ..
+  217  ls
+  218  cd admin
+  219  sudo cd admin
+  220  sudo su
+  221  history
   222  ls
-  223  cat doctors_list.txt
-  224  cd patients
-  225  ls
-  226  cat patients_list.txt
+  223  cat policy_link.txt 
+  224  sudo policy_link.txt 
+  225  sudo cat policy_link.txt 
+  226  history
   227  ls
   228  cd ..
-  229  ls
-  230  cd ,,
-  231  cd ..
-  232  cd ..
-  233  ls
-  234  cd clinic_records/
-  235  ls
-  236  chmod 770 patients
-  237  ls
-  238  cd doctors
-  239  chmod 770 patients
-  240  ls -l
-  241  ls
-  242  cd patients
-  243  ls
-  244  tar -czvf old_patients.tar.gz patients_list.txt
-  245  ls
-  246  cd ..
-  247  cd ..
-  248  ls
-  249  grep "diabetes"*.txt
-  250  fg
-  251  grep "diabetes" *.txt
-  252  grep "diabetes" *.txt
-  253  grep *.txt
-  254  cd doctors
+  229  cd ..
+  230  ls
+  231  cd _
+  232  ls
+  233  cd -
+  234  ls
+  235  cd admin
+  236  chmod a+X /admin
+  237  sudo chmod a+X /admin
+  238  ls
+  239  sudo chmod a+X ./admin
+  240  ls
+  241  cd admin
+  242  ls
+  243  cd ..
+  244  ls -la
+  245  sudo chown youssefmohammed:youssefmohammed ./admin/
+  246  ls
+  247  ls -la
+  248  cd admin
+  249  ls
+  250  echo 'To extract a tar.gz file, use: tar -xzf filename.tar.gz'
+  251  whoami
+  252  sudo su
+  253  ls
+  254  cd ..
   255  ls
-  256  cd patients
-  257  grep *.txt
-  258  cat patients_list.txt
-  259  grep "flu"
-  260  grep "flu" patients_list.txt
-  261  nano patients_list.txt
-  262  grep "flu" patients_list.txt
-  263  cd ..
-  264  ls
-  265  cd ..
-  266  ls
-  267  ls
+  256  cd doctors
+  257  ls
+  258  cat policy.txt
+  259  ls -la policy.txt
+  260  rm policy.txt
+  261  cd ..
+  262  ls
+  263  ln -s ./policy.txt ./doctors/policy_link.txt
+  264  cd doctors
+  265  ls
+  266  cat policy_link.txt 
+  267  ls -l policy_link.txt
   268  cat policy_link.txt
-  269  rm -r policy_link.txt
-  270  ls
-  271  cd admin
-  272  ln -s ./policy.txt policy_link.txt
+  269  ls
+  270  nano policy_link.txt
+  271  ls
+  272  rm policy_link.txt
   273  ls
   274  cd ..
-  275  cd ..
-  276  ls
-  277  cd clinic_records/
-  278  ls
-  279  mv admin/policy_link.txt ./
-  280  ls
-  281  rm -r policy_link.txt
-  282  ln -s ./admin/policy.txt policy_link.txt
-  283  ls
-  284  cat policy_link.txt
-  285  cd admin
-  286  ls
-  287  cd logs
-  288  ls
-  289  history > history.txt
-  290  cat history.txt
-  291  history
-  292  cd ..
-  293  ls
-  294  cd ll
-  295  cd ,,
-  296  cd ..
-  297  ls
-  298  cd doctors
-  299  pwd
-  300  docdir
-  301  cd ..
-  302  ls
-  303  cd admin
-  304  l;s
-  305  ls
-  306  pwd
-  307  cd documents
-  308  ls
-  309  cd Documents
-  310  ls
-  311  cd OS_Task\\project/
-  312  ls
-  313  cd clinic_records
-  314  ls
-  315  nano ~/.bashrc
-  316  mkdir s
-  317  ls
-  318  rm -r s
+  275  ls
+  276  sudo chown root:root admin/
+  277  ls
+  278  cd admin
+  279  cd ..
+  280  ls -l
+  281  sudo chmod 700 ./admin
+  282  ls -l admin
+  283  sudo ls -l admin
+  284  ls
+  285  chown root:root policy.txt
+  286  sudo chown root:root policy.txt
+  287  ls -l policy.txt
+  288  chmod 600 policy.txt
+  289  sudo chmod 600 policy.txt
+  290  ls -l policy.txt
+  291  cat policy.txt
+  292  ls -l
+  293  sudo chmod -rwxr--r-- policy.txt
+  294  cat policy.txt
+  295  sudo cat policy.txt
+  296  ls -ls
+  297  sudo chmod 744 policy.txt
+  298  ls -l
+  299  cat policy.txt
+  300  nano policy_link.txt
+  301  nano policy.txt 
+  302  sudo chmod -rw------- policy.txt 
+  303  ls -l
+  304  sudo chmod u=rwx, g=r, o=r policy.txt
+  305  sudo chmod u=rwx,g=r,o=r policy.txt
+  306  ls -l
+  307  cat policy.txt
+  308  echo "" >> policy.txt 
+  309  ls
+  310  cd doctors
+  311  ls
+  312  cd patints
+  313  ls
+  314  cd patients
+  315  ls
+  316  cat patients_list.txt
+  317  cd ..
+  318  cd ..
   319  ls
-  320  nano ~/.bashrc
-  321  docdir
-  322  nano ~/.bashrc
-  323  docdir
-  324  source ~/.bashrc
-  325  docdir
-  326  alias admin='cd /home/youssefmohammed/Documents/OS_Task\project/clinic_records/admin'
-  327  admin
-  328  source ~/.bashrc
-  329  ls
-  330  admin
-  331  ls
-  332  cat policy.txt
-  333  netstat
-  334  ping
-  335  ping google.com
-  336  exit
-  337  exit
-  338  ls
-  339  cd clinic_records/
-  340  ls
-  341  cat ./admin/policy.txt
-  342  cd ..
-  343  ls
-  344  cd reception
-  345  ls
-  346  cd schedule/
-  347  ls
-  348  echo "patient3" >> 13_04_2021.txt
-  349  ls
-  350  nano 13_04_2021.txt
-  351  cat 13_04_2021.txt
-  352  code 12_06_2014.txt
-  353  exit
-  354  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  355  cd ..
-  356  cd ..l
-  357  ls
-  358  cd ..
-  359  cd ..
-  360  ls
-  361  cd ..
-  362  ls
-  363  cd ..
-  364  cd ..
+  320  cd reception
+  321  ls
+  322  cd schedule/
+  323  ls
+  324  cd ..
+  325  lcd 
+  326  cd ..
+  327  ls
+  328  cd ..
+  329  lc
+  330  ls
+  331  cd clinic_records/
+  332  ls
+  333  mkdir Project
+  334  ls
+  335  rm Project/
+  336  rm -r Project
+  337  ls
+  338  cd ..
+  339  ls
+  340  mkdir Project
+  341  ls
+  342  mv Project3.html Project/
+  343  mv script.js Project/
+  344  ls
+  345  mv style.css Project/
+  346  ls
+  347  cd Project/
+  348  ls
+  349  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  350  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  351  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  352  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  353  cd OS_Task
+  354  ls
+  355  ls
+  356  cd Document
+  357  cd Documents
+  358  ls
+  359  cd Os
+  360  cd OS_Task\\project/
+  361  ls
+  362  cd clinic_records
+  363  ls
+  364  cd reception
   365  ls
-  366  cd youssefmohammed/
+  366  cd schedule
   367  ls
-  368  cd Downloads/
-  369  git clone https://github.com/taj-ny/kwin-effects-forceblur
-  370  cd kwin-effects-forceblur
-  371  mkdir build
-  372  cd build
-  373  cmake ../ -DCMAKE_INSTALL_PREFIX=/usr
-  374  make -j
-  375  sudo make install
-  376  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  377  sudo apt install -y git build-essential cmake kf6-extra-cmake-modules \ kf6-extra-cmake-modules kf6-frameworkintegration-dev \ kf6-kcmutils-dev kf6-kcolorscheme-dev kf6-kconfig-dev kf6-kconfigwidgets-dev \ kf6-kcoreaddons-dev kf6-kguiaddons-dev kf6-ki18n-dev kf6-kiconthemes-dev \ kf6-kirigami2-dev kf6-kpackage-dev kf6-kservice-dev kf6-kwindowsystem-dev \ kirigami2-dev kwayland-dev libx11-dev libkdecorations2-dev libkf5config-dev \ libkf5configwidgets-dev libkf5coreaddons-dev libkf5guiaddons-dev libkf5i18n-dev \ libkf5iconthemes-dev libkf5kcmutils-dev libkf5package-dev libkf5service-dev \ libkf5style-dev libkf5wayland-dev libkf5windowsystem-dev libplasma-dev \ libqt5x11extras5-dev qt6-base-dev qt6-declarative-dev qtbase5-dev \ qtdeclarative5-dev gettext qt6-svg-dev extra-cmake-modules qt3d5-dev
-  378  sudo apt update
-  379  sudo apt install -y git build-essential cmake kf6-extra-cmake-modules \ kf6-extra-cmake-modules kf6-frameworkintegration-dev \ kf6-kcmutils-dev kf6-kcolorscheme-dev kf6-kconfig-dev kf6-kconfigwidgets-dev \ kf6-kcoreaddons-dev kf6-kguiaddons-dev kf6-ki18n-dev kf6-kiconthemes-dev \ kf6-kirigami2-dev kf6-kpackage-dev kf6-kservice-dev kf6-kwindowsystem-dev \ kirigami2-dev kwayland-dev libx11-dev libkdecorations2-dev libkf5config-dev \ libkf5configwidgets-dev libkf5coreaddons-dev libkf5guiaddons-dev libkf5i18n-dev \ libkf5iconthemes-dev libkf5kcmutils-dev libkf5package-dev libkf5service-dev \ libkf5style-dev libkf5wayland-dev libkf5windowsystem-dev libplasma-dev \ libqt5x11extras5-dev qt6-base-dev qt6-declarative-dev qtbase5-dev \ qtdeclarative5-dev gettext qt6-svg-dev extra-cmake-modules qt3d5-dev
-  380  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  381  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  382  ls
-  383  cd clinic_records/
+  368  pwd
+  369  cd ..
+  370  cd /home/youssefmohammed/Documents/OS_Task\project/clinic_records/reception/schedule
+  371  cd /home/youssefmohammed/Documents/OS_Task\project/clinic_records/reception/schedule
+  372  cd home/youssefmohammed/Documents/OS_Task\project/clinic_records/reception/schedule
+  373  ls
+  374  pwd
+  375  ls
+  376  cd Documents/
+  377  ls
+  378  cd OS_Task/
+  379  ls
+  380  cd clinic_records/
+  381  ls
+  382  cd recepto
+  383  cd reception/
   384  ls
-  385  cd doctors
+  385  cd schedule
   386  ls
-  387  cd patients
-  388  ls
-  389  grep "diabetes" *.txt
-  390  cd ..
-  391  ls
-  392  cd ..
-  393  ls
-  394  cat policy_link.txt 
-  395  cat policy_link.txt 
-  396  clear
-  397  cat policy_link.txt 
-  398  cat policy_link.txt 
-  399  cat policy_link.txt 
-  400  alias la='ls -la'
-  401  ls
-  402  la
-  403  la
-  404  alias la='ls -la'
-  405  la
-  406  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  407  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  408  cd ..
-  409  cd ..
+  387  pwd
+  388  cd ..
+  389  cd ..
+  390  cd /home/youssefmohammed/Documents/OS_Task/clinic_records/reception/schedule
+  391  cd..
+  392  sudo nano ./bash.rc
+  393  sudo nano ./bashrc
+  394  sudo nano ~./bashrc
+  395  sudo nano ~/.bashrc
+  396  source ~/.bashrc
+  397  goschedule
+  398  cd ..
+  399  cd ..
+  400  cd ..
+  401  goschedule
+  402  cd ..
+  403  cd ..
+  404  ls
+  405  pwd
+  406  cd ..
+  407  sudo nano ~/.bashrc
+  408  source ~/.bashrc
+  409  gohistory
   410  ls
-  411  git clone https://github.com/anoz24/Data-Structure-SWE27.git
-  412  cd Data-Structure-SWE27
-  413  ls -l
-  414  ls -la
-  415  ls -a
-  416  cd .
-  417  cd .
-  418  code .
-  419  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  420  sudo htop
-  421  sudo apt install htop
-  422  sudo htop
-  423  sudo htop
-  424  man htop
-  425  cd ..
-  426  cd ..
+  411  nano ~/.bashrc
+  412  cd
+  413  pwd
+  414  cd documents
+  415  cd -
+  416  ls -l
+  417  cd clinic_records/
+  418  ls
+  419  ls -la
+  420  cat policy
+  421  cat policy.txt
+  422  clear
+  423  nano policy.tx
+  424  nano policy.txt
+  425  rm policy.tx
+  426  rm -r  policy.tx
   427  ls
-  428  cd Documents/
-  429  ls
-  430  cd OS_Task\\project/
-  431  ls
-  432  code .
-  433  code .
-  434  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  435  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
-  436  ls
-  437  cd clinic_records/
-  438  ls
-  439  cd admin
-  440  sudo cd admin
-  441  sudo su
-  442  man su
-  443  ls
-  444  cd admin
-  445  su
-  446  sudo su
-  447  exit
-  448  exit
-  449  cd admin
-  450  sudo cd admin
-  451  sudo su
+  428  sduo nano policy.txt
+  429  sudo nano policy.txt
+  430  ls
+  431  ls -l
+  432  sudo chown youssefmohammed:youssefmohammed policy.txt
+  433  ls -l
+  434  sudo chown root:root policy.txt
+  435  ls
+  436  ls -l
+  437  cd admin
+  438  sudo cd admin
+  439  sudo sy
+  440  sudo su
+  441  ls
+  442  sudo chmod g=r reception 
+  443  ls -l
+  444  sudo chmod g=rwx reception 
+  445  ls -l
+  446  ls
+  447  code ./
+  448  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  449  node -e 'require("fs").writeFileSync("/home/youssefmohammed/snap/code/192/.local/share/vscode-sqltools/.node-runtime", process.execPath)' && exit 0
+  450  ls
+  451  cd Documents
   452  ls
-  453  ls
-  454  cd Documents
-  455  ls
-  456  cd OS_Task\\project/
-  457  ;s
+  453  cd OS_Task
+  454  ls
+  455  cd clinic_records/
+  456  ls
+  457  cd doctors
   458  ls
-  459  cd clinic_records/
-  460  ls
-  461  cd admin
-  462  sudo cd admin
-  463  sudo su
-  464  ls
-  465  cd doctors
-  466  cd ..
-  467  ls -a
-  468  ls -l
-  469  ls
-  470  cd clinic_records/
-  471  ls
-  472  cd admin
-  473  cd ..
-  474  ls
-  475  chmod 755 /admin
-  476  chmod 755 ./admin
-  477  cd admin
+  459  nano doctors_list.txt
+  460  sudo chown root:root doctors_list.txt 
+  461  sudo chmod u=rwx,g=r,o=r doctors_list.txt 
+  462  ls -l
+  463  cat doctors_list.txt 
+  464  nano doctors_list.txt 
+  465  cd patients
+  466  ls
+  467  nano patients_list.txt
+  468  cd ..
+  469  cd ..
+  470  ls
+  471  cd recept
+  472  cd reception
+  473  ls
+  474  cd schedule
+  475  ls
+  476  cat 5_14_2025.txt
+  477  cat 05_14_2025.txt
   478  cd ..
-  479  ls -la
-  480  sudo chmod 700 ./admin
+  479  cd ..
+  480  ls
   481  cd admin
-  482  sudo chown:root ./admin
-  483  sudo chown root:root ./admin
-  484  cd ..
-  485  sudo chown root:root ./admin
-  486  ls
-  487  ls =la
-  488  ls -la
-  489  cd adiom
-  490  cd admin
-  491  sudo cd admin
-  492  sudo bash -c "cd admin""
-  493  sudo bash -c "cd admin"
-  494  cd ..
+  482  ls
+  483  sudo cd admin
+  484  sudo su admin
+  485  sudo su
+  486  cd reception
+  487  ls
+  488  cd shcedule
+  489  cd schedule
+  490  ls
+  491  touch test.txt
+  492  ls
+  493  mv test,txt 15-5-2025.txt
+  494  mv test.txt 15-05-2025.txt
   495  ls
-  496  sudo code ./
-  497  sudo code ./ --no-sandbox
-  498  sudo code --no-sandbox  ./
-  499  sudo --no-sandbox  code .
-  500  clear
-  501  ls
-  502  history > 0
-  503  ls
-  504  rm 0
-  505  ls
-  506  history > history.txt
+  496  cd ..'
+  497  cd ..
+  498  exit
+  499  cd ..'
+  500  pwd
+  501  cd /home/youssefmohammed/Documents/OS_Task
+  502  cd clinic_records
+  503  cd doctors
+  504  ls
+  505  cd patients
+  506  ls
+  507  cat patients_list.txt
+  508  grep "flu"
+  509  grep "flu" patients_list.txt
+  510  ls
+  511  cat patients_list.txt
+  512  grep "something"*.txt
+  513  grep "something" patients_list.txt
+  514  cd ..
+  515  cd ..
+  516  ls
+  517  cd doctors
+  518  ls
+  519  cd ..
+  520  ln -s /home/youssefmohammed/Documents/OS_Task/clinic_records ls
+  521  ls
+  522  cd doctors/
+  523  ls
+  524  ln -s ./../policy.txt policy_link.txt
+  525  ls
+  526  cat policy_link.txt 
+  527  nano policy_link.txt 
+  528  clear
+  529  cd .
+  530  cd ..
+  531  history > history.txt
+  532  ls
+  533  cat history.txt
+  534  clear
+  535  cat history.txt
+  536  histoy
+  537  history
+  538  history
+  539  history >history.txt
